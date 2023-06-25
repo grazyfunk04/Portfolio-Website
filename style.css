@@ -123,6 +123,7 @@ nav ul li a:hover{
     }
 }
 
+
 /* MAIN CSS */
 #image_1{
     backdrop-filter: blur(12px);
@@ -145,12 +146,12 @@ nav ul li a:hover{
     font-size: 2.5rem;
 }
 
-#github{
+#github_visit{
     text-decoration: none;
     color: white;
 }
 
-#github:hover{
+#github_visit:hover{
     font-size: 1.1rem;
 }
 
@@ -178,4 +179,88 @@ nav ul li a:hover{
 }
 #element{
     color: rgb(170, 107, 228);
+}
+
+@media(max-width: 1500px){
+    .firstSection{
+        flex-direction: column-reverse;
+      }
+    .leftSection{
+        width: 100% !important;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .rightSection{
+        width: 400px !important;
+        height: 400px !important;
+        justify-content: center !important;
+        margin: 15px 70px;
+        margin-left: 150px;
+    }
+}
+
+
+/* FOOTER CSS */
+footer{
+    background-color: rgb(141, 188, 239);
+    height: 120px;
+}
+.footer{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.data{
+    display: flex;
+    justify-content: space-around;
+}
+
+.data ul{
+    display: flex;
+    justify-content: center;
+}
+
+.data ul li{
+    list-style: none;
+}
+
+.data ul li a{
+    text-decoration: none;
+    color: rgb(4, 4, 47);
+}
+
+.data ul li a:hover{
+    color: rgb(0, 0, 0);
+    font-size: 1.02rem;
+    text-decoration: none; 
+    border-bottom:2.5px solid red;
+}
+
+
+.handles{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+#github{
+    width: 30px;
+    height: 30px;
+}
+
+#instagram{
+    width: 30px;
+    height: 30px;
+}
+
+#whatsapp{
+    width: 30px;
+    height: 30px;
+}
+
+#linkedin{
+    width: 30px;
+    height: 30px;
 }
