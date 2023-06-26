@@ -205,25 +205,39 @@ nav ul li a:hover{
 /* FOOTER CSS */
 footer{
     background-color: rgb(141, 188, 239);
-    height: 120px;
+    height: 150px;
 }
 .footer{
     display: flex;
     justify-content: space-evenly;
 }
 
+.footer_name{
+    font-size: 1.6rem;
+    font-weight: 400;
+    margin-top: 46px;
+    margin-left: 35px;
+}   
+
+.footer_name a{
+    text-decoration: none;
+}
+
 .data{
     display: flex;
     justify-content: space-around;
+    margin: 10px 10px;
 }
 
 .data ul{
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
+    flex-direction: column;
 }
 
 .data ul li{
     list-style: none;
+    padding: 1.3px 0;
 }
 
 .data ul li a{
@@ -241,26 +255,43 @@ footer{
 
 .handles{
     display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: space-around;
 }
 
 #github{
+    display: flex !important;
+    justify-content: space-around !important;
     width: 30px;
     height: 30px;
+    margin: 45px 5px;
 }
 
 #instagram{
+    display: flex;
+    justify-content: space-around;
     width: 30px;
     height: 30px;
+    margin: 45px 5px;
 }
 
 #whatsapp{
+    display: flex;
+    justify-content: space-around;
     width: 30px;
     height: 30px;
+    margin: 45px 5px;
 }
 
 #linkedin{
+    display: flex;
+    justify-content: space-around;
     width: 30px;
     height: 30px;
+    margin: 45px 5px;
 }
+
+.footer-rights{
+    display: flex;
+    justify-content: space-around;
+}
+
