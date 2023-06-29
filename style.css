@@ -4,8 +4,8 @@
 }
 
 body{
-    background-color: rgb(124, 233, 237);
-    color: rgb(4, 4, 47);
+    background-color: rgb(11, 12, 12);
+    color: rgb(239, 239, 247);
     font-family: 'Poppins', sans-serif;
     height: 100vh;
 }
@@ -16,7 +16,7 @@ nav{
     justify-content: space-around;
     align-items: center;
     height: 80px;
-    background-color: rgb(141, 188, 239);
+    background-color: rgb(11, 12, 12);
     width: 100%;
     margin: 0 auto;
 }
@@ -33,11 +33,11 @@ nav ul li{
 
 nav ul li a{
     text-decoration: none;
-    color: rgb(4, 4, 47);
+    color: rgb(250, 250, 250);
 }
 
 nav ul li a:hover{
-    color: rgb(0, 0, 0);
+    color: rgb(250, 250, 250);
     font-size: 1.02rem;
     text-decoration: none; 
     border-bottom:2.5px solid red;
@@ -50,6 +50,7 @@ nav ul li a:hover{
 
 .left a{
     text-decoration: none !important;
+    color: rgb(250, 250, 250);
 }
 
 .toggle_btn{
@@ -124,10 +125,10 @@ nav ul li a:hover{
 }
 
 
-/* MAIN CSS */
+/* FIRST SECTION CSS */
 #image_1{
     backdrop-filter: blur(12px);
-    border: 5px solid black;
+    border: 5px solid white;
     border-radius: 105px;
 }
 
@@ -162,7 +163,7 @@ nav ul li a:hover{
     padding:12px;
     background: #1e2167;
     color: white;
-    border: 4px solid black;
+    border: 4px solid white;
     border-radius: 6px;
     font-size: 1.04rem;
     cursor: pointer;
@@ -201,10 +202,145 @@ nav ul li a:hover{
     }
 }
 
+/* SECOND SECTION CSS */
+.secondSectiontopSection{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    flex: 50%;
+}
+
+#education{
+    transition: transform .3s;
+    height: 270px;
+    width: 270px;
+    border-radius: 15px;
+}
+
+#education:hover{
+    transform:scale(1.1);
+}
+
+#projects{
+    transition: transform .3s;
+    height: 270px;
+    width: 270px;
+    border-radius: 25px;
+}
+
+#projects:hover{
+    transform:scale(1.1);
+}
+
+.secondSectionbottomSection{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+#experience{
+    transition: transform .3s;
+    height: 270px;
+    width: 270px;
+    border-radius: 25px;
+}
+
+#experience:hover{
+    transform:scale(1.1);
+}
+
+#interest{
+    transition: transform .3s;
+    height: 270px;
+    width: 270px;
+    border-radius: 25px;
+}
+
+#interest:hover{
+    transform:scale(1.1);
+}
+
+.secondSectiontopSectionVal{
+    display: flex;
+}
+
+#first{
+    margin-left: 410px;
+    justify-content: space-evenly;
+    margin-bottom: 50px;
+    margin-top: 35px;
+}
+
+#second{
+    margin-left: 480px;
+    justify-content: space-evenly;
+    margin-bottom: 50px;
+    margin-top: 35px;
+}
+
+.secondSectionbottomSectionVal{
+    display: flex;
+}
+
+#third{
+    margin-left: 395px;
+    justify-content: space-evenly;
+    margin-bottom: 50px;
+    margin-top: 35px;
+}
+
+#fourth{
+    margin-left: 480px;
+    justify-content: space-evenly;
+    margin-bottom: 50px;
+    margin-top: 35px;
+}
+
+.resume-section {
+    text-align: center;
+    font-size: 2.0rem;
+    color: #4f4f4f;
+    font-family: "Poppins", sans-serif;
+}
+.list-inline {
+    list-style: none;
+}
+  
+.list-icons {
+    font-size: 3.2rem;
+}
+  
+#skill-bars {
+    width: 50%;
+    margin: 0 auto;
+}
+  
+.progress{
+    background-image: linear-gradient(
+      to left,
+      #fdfeff,
+      #29b5f6,
+      #104566,
+      #0b3a5f,
+      #010101
+    );
+}
+  
+.blue,
+.list-inline-item i:hover {
+    color: #5fb4e8;
+    transition: all 0.2s ease-in-out;
+}
+
+.list-inline-item{
+    display: inline-block;
+    margin: 10px 27px;
+}
+
 
 /* FOOTER CSS */
 footer{
-    background-color: rgb(141, 188, 239);
+    background-color: rgb(11, 12, 12);
     height: 150px;
 }
 .footer{
@@ -221,6 +357,7 @@ footer{
 
 .footer_name a{
     text-decoration: none;
+    color: rgb(250, 250, 250);
 }
 
 .data{
@@ -242,11 +379,11 @@ footer{
 
 .data ul li a{
     text-decoration: none;
-    color: rgb(4, 4, 47);
+    color: rgb(250, 250, 250);
 }
 
 .data ul li a:hover{
-    color: rgb(0, 0, 0);
+    color: rgb(250, 250, 250);
     font-size: 1.02rem;
     text-decoration: none; 
     border-bottom:2.5px solid red;
@@ -264,6 +401,7 @@ footer{
     width: 30px;
     height: 30px;
     margin: 45px 5px;
+    color: rgb(250, 250, 250);
 }
 
 #instagram{
