@@ -10,7 +10,7 @@ body{
     height: 100vh;
 }
 
-/* NAVBAR CSS */
+/* ====NAVBAR CSS==== */
 nav{
     display: flex;
     justify-content: space-around;
@@ -125,7 +125,7 @@ nav ul li a:hover{
 }
 
 
-/* FIRST SECTION CSS */
+/* ====FIRST SECTION CSS==== */
 #image_1{
     backdrop-filter: blur(12px);
     border: 5px solid white;
@@ -145,6 +145,7 @@ nav ul li a:hover{
 
 .leftSection{
     font-size: 2.5rem;
+    font-weight: bold;
 }
 
 #github_visit{
@@ -161,13 +162,16 @@ nav ul li a:hover{
 }
 .leftSection .btn{
     padding:12px;
-    background: #1e2167;
+    background: rgb(170, 107, 228);
     color: white;
     border: 4px solid white;
     border-radius: 6px;
     font-size: 1.04rem;
     cursor: pointer;
+    font-weight: bold;
+    font-family: 'Poppins', sans-serif;
 }
+
 .rightSection img{
     width: 80%;
     margin: 50px 0;
@@ -202,7 +206,10 @@ nav ul li a:hover{
     }
 }
 
-/* SECOND SECTION CSS */
+/* ====SECOND SECTION CSS==== */
+.secondSection{
+    height: 130vh;
+}
 .secondSectiontopSection{
     display: flex;
     justify-content: space-evenly;
@@ -236,6 +243,14 @@ nav ul li a:hover{
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
+}
+
+.secondSectiontitle{
+    text-align: center;
+    color: rgb(250, 250, 250);
+    font-size: 3rem;
+    font-family: "Poppins", sans-serif;
+    margin: 25px 20px;
 }
 
 #experience{
@@ -296,11 +311,13 @@ nav ul li a:hover{
     margin-top: 35px;
 }
 
+/* ====SKILLS CSS==== */
 .resume-section {
     text-align: center;
     font-size: 2.0rem;
     color: #7e7e7e;
     font-family: "Poppins", sans-serif;
+    height: 100vh;
 }
 .list-inline {
     list-style: none;
@@ -334,6 +351,7 @@ nav ul li a:hover{
 .blue{
     color: rgb(250, 250, 250);
     transition: all 0.2s ease-in-out;
+    margin: 35px 20px;
 }
 
 .list-inline-item{
@@ -342,7 +360,55 @@ nav ul li a:hover{
 }
 
 
-/* FOOTER CSS */
+/* ====THIRD SECTION CSS==== */
+.aboutMetitle{
+    text-align: center;
+    font-size: 3.0rem;
+    color: rgb(250, 250, 250);
+    font-family: "Poppins", sans-serif;
+}
+
+#aboutMe{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 75vh;
+}
+
+#aboutMeimg{
+    width: 350px;
+    height: 350px;
+    border: 5px solid rgb(239, 239, 247);
+    border-radius: 105px;
+    margin: 20px 40px;
+    backdrop-filter: blur(12px);
+}
+
+.aboutMeleftSection{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.content{
+    word-wrap: break-word;
+    width: 30vw;
+}
+
+.aboutMeReadMore{
+    padding: 7px;
+    background:rgb(170, 107, 228);
+    color: white;
+    border: 4px solid white;
+    border-radius: 6px;
+    font-size: 1.0rem;
+    cursor: pointer;
+    font-weight: bold;
+    font-family: 'Poppins', sans-serif;
+    margin-top: 27px;
+}
+
+
+/* ====FOOTER CSS==== */
 footer{
     background-color: rgb(11, 12, 12);
     height: 150px;
@@ -397,6 +463,15 @@ footer{
 .handles{
     display: flex;
     justify-content: space-around;
+    background: linear-gradient(
+      to right,
+      #fdfeff,
+     #fdfeff,
+      #fdfeff,
+        #fdfeff,
+      #fdfeff,
+        #fdfeff,
+    );
 }
 
 #github{
