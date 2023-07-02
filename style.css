@@ -311,6 +311,7 @@ nav ul li a:hover{
     margin-top: 35px;
 }
 
+
 /* ====SKILLS CSS==== */
 .resume-section {
     text-align: center;
@@ -392,6 +393,8 @@ nav ul li a:hover{
 .content{
     word-wrap: break-word;
     width: 30vw;
+    font-family: "Poppins", sans-serif;
+    font-size: 1.04rem;
 }
 
 .aboutMeReadMore{
@@ -511,4 +514,3 @@ footer{
     display: flex;
     justify-content: space-around;
 }
-
