@@ -462,29 +462,25 @@ footer{
     border-bottom:2.5px solid red;
 }
 
-
 .handles{
     display: flex;
     justify-content: space-around;
-    background: linear-gradient(
-      to right,
-      #fdfeff,
-     #fdfeff,
-      #fdfeff,
-        #fdfeff,
-      #fdfeff,
-        #fdfeff,
-    );
+}
+
+.handles a{
+    text-decoration: none;
 }
 
 #github{
-    display: flex !important;
-    justify-content: space-around !important;
+    display: flex;
+    justify-content: space-around;
     width: 30px;
     height: 30px;
     margin: 45px 5px;
     color: rgb(250, 250, 250);
+    font-size: 2.0rem;
 }
+
 
 #instagram{
     display: flex;
@@ -492,6 +488,8 @@ footer{
     width: 30px;
     height: 30px;
     margin: 45px 5px;
+    color: rgb(250, 250, 250);
+    font-size: 2.0rem;
 }
 
 #whatsapp{
@@ -500,6 +498,8 @@ footer{
     width: 30px;
     height: 30px;
     margin: 45px 5px;
+    color: rgb(250, 250, 250);
+    font-size: 2.0rem;
 }
 
 #linkedin{
@@ -508,6 +508,8 @@ footer{
     width: 30px;
     height: 30px;
     margin: 45px 5px;
+    color: rgb(250, 250, 250);
+    font-size: 2.0rem;
 }
 
 .footer-rights{
