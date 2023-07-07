@@ -172,6 +172,19 @@ nav ul li a:hover{
     font-family: 'Poppins', sans-serif;
 }
 
+#resume_visit{
+    text-decoration: none;
+    color: white;
+}
+
+#resume_visit:visited{
+    color:white
+}
+
+#resume_visit:hover{
+    font-size: 1.1rem;
+}
+
 .rightSection img{
     width: 80%;
     margin: 50px 0;
