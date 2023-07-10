@@ -124,7 +124,194 @@ nav ul li a:hover{
     }
 }
 
+/* ====FIRST SECTION CSS====*/
+#element{
+    color: rgb(170, 107, 228);
+    font-size: 4rem;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+}
 
+.firstSection{
+    font-size: 4rem;
+    font-weight: bold;
+    margin: 40px 0;
+}
+
+.firstSection > div{
+    display: flex;
+    justify-content: center;
+    height: 15vh;
+}
+
+.typed_cursor{
+    opacity: 1;
+}
+
+.typed_cursor.typed_cursor--blink{
+    animation: typedjsBlink 0.8s infinite;
+    -webkit-animation: typedjsBlink 0.8s infinite;
+            animation: typedjsBlink 0.8s infinite;
+}
+
+
+/* ====SECOND SECTION CSS====*/
+.projects_section{
+    text-align: center;
+    color: rgb(250, 250, 250);
+    font-size: 3.4rem;
+    font-family: "Poppins", sans-serif;
+}
+
+.secondSection a{
+    text-decoration: none;
+    color: rgb(239, 239, 247);
+}
+
+.h3{
+    font-size: 2.5rem;
+    font-weight: bold;
+    font-family: 'Poppins', sans-serif;
+    list-style: none;
+}
+
+.portfolioWebsite{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-bottom: 120px;
+    margin-top: 30px;
+}
+
+.portfolioWebsite .h3{
+    margin: 0 60px;
+}
+
+.todoApp{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 120px 0;
+}
+
+.todoApp .h3{
+    margin: 0 160px;
+}
+
+.portfolioApp{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 120px 0;
+}
+
+.portfolioApp .h3{
+    margin: 0 20px;
+}
+
+.ai{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 120px 0;
+}
+
+.ai .h3{
+    margin: 0 100px;
+}
+
+.zomatoClone{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 120px 0;
+}
+
+.zomatoClone .side{
+    margin: 0 85px;
+}
+
+.flappyBird{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 120px 0;
+}
+
+.flappyBird .h3{
+    margin: 0 50px;
+}
+
+#website{
+    width: 350px;
+    height: 350px;
+    border-radius: 60px;
+    transition: transform .3s;
+}
+
+#website:hover{
+    transform:scale(1.1);
+}
+
+#todoApp{
+    width: 350px;
+    height: 350px;
+    border-radius: 60px;
+    margin-left: 35px;
+    transition: transform .3s;
+}
+
+#todoApp:hover{
+    transform:scale(1.1);
+}
+
+#app{
+    width: 350px;
+    height: 350px;
+    border-radius: 60px;
+    margin-left: -90px;
+    transition: transform .3s;
+}
+
+#app:hover{
+    transform:scale(1.1);
+}
+
+#aiJarvis{
+    width: 350px;
+    height: 350px;
+    border-radius: 60px;
+    margin-left: 45px;
+    transition: transform .3s;
+}
+
+#aiJarvis:hover{
+    transform:scale(1.1);
+}
+
+#zomatoClone{
+    width: 350px;
+    height: 350px;
+    border-radius: 60px;
+    margin-left: 35px;
+    transition: transform .3s;
+}
+
+#zomatoClone:hover{
+    transform:scale(1.1);
+}
+
+#flappyBirdGame{
+    width: 350px;
+    height: 350px;
+    border-radius: 60px;
+    margin-left: -27px;
+    transition: transform .3s;
+}
+
+#flappyBirdGame:hover{
+    transform:scale(1.1);
+}
 
 /* ====FOOTER CSS==== */
 footer{

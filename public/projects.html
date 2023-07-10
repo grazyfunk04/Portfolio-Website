@@ -7,12 +7,11 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style_about.css">
+    <link rel="stylesheet" href="style_projects.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet" />
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
@@ -46,7 +45,95 @@
     <script src="logic.js"></script>
 
     <main>
+        <section class="firstSection">
+            <div>
+                <span id="element" class="typed_cursor"></span>
+            </div>
+        </section>
+
+        <section class="secondSection">
+            <h2 class="projects_section">&lt; Projects &gt;</h2>
+
+            <div class="portfolioWebsite">
+                <a href="https://grazyfunk04.github.io/Portfolio-Website/"><img src="../resources/portfolioWebsite.jpg" alt="website" id="website"></a>
+                <ul>
+                    <li class="h3">
+                        <a href="https://grazyfunk04.github.io/Portfolio-Website/">Portfolio Website</a>
+                    </li>
+                    <li>
+                        Technology Used : HTML, CSS, Javascript, Typed js and Node.js.
+                    </li>
+                </ul>
+                
+            </div>
+            <div class="todoApp">
+                <a href="https://github.com/grazyfunk04/DoIt_Todo_App"><img src="../resources/todoApp.png" alt="todoApp" id="todoApp"></a>
+                <ul>
+                    <li class="h3">
+                        <a href="https://github.com/grazyfunk04/DoIt_Todo_App">Todo App</a>
+                    </li>
+                    <li>
+                        Technology Used : Java, SQLite Database, Recyler View, Android Studio.
+                    </li>
+                </ul>
+            </div>
+            <div class="portfolioApp">
+                <a href="https://github.com/grazyfunk04/PortfolioApp"><img src="../resources/portfolioApp.jpg" alt="app" id="app"></a>
+                <ul>
+                    <li class="h3">
+                        <a href="https://github.com/grazyfunk04/PortfolioApp">Portfolio App</a>
+                    </li>
+                    <li>
+                        Technology Used : Java, Android Studio.
+                    </li>
+                </ul>
+            </div>
+            <div class="ai">
+                <a href="https://github.com/grazyfunk04/AIJarvis"><img src="../resources/ai.png" alt="aiJarvis" id="aiJarvis"></a>
+                <ul>
+                    <li class="h3">
+                        <a href="https://github.com/grazyfunk04/AIJarvis">AI Jarvis Assistant</a>
+                    </li>
+                    <li>
+                        Technology Used : Python, Python Libraries like Speech Recognition, pyttsx3.
+                    </li>
+                </ul>
+            </div>
+            <div class="zomatoClone">
+                <a href="https://github.com/grazyfunk04/ZomatoCloneUsingReactJs"><img src="../resources/zomato.png" alt="zomatoClone" id="zomatoClone"></a>
+                <ul>
+                    <li class="h3">
+                        <a href="https://github.com/grazyfunk04/ZomatoCloneUsingReactJs">Zomato Clone Using ReactJs</a>
+                    </li>
+                    <li class="side">
+                        Technology Used : React Js Library, JSX, VS Code.
+                    </li>
+                </ul>
+            </div>
+            <div class="flappyBird">
+                <a href="https://github.com/grazyfunk04/FlappyBirdGame"><img src="../resources/birdGame.jpg" alt="flappyBirdGame" id="flappyBirdGame"></a>
+                <ul>
+                    <li class="h3">
+                       <a href="https://github.com/grazyfunk04/FlappyBirdGame">Flappy Bird Game</a>
+                    </li>
+                    <li>
+                        Technology Used : Python, Python Libraries like pygame, sys.
+                    </li>
+                </ul>
+            </div>
+        </section>
     </main>
+
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script>
+        var options = {
+            strings: ['Welcome to Project Section', 'My Name is Kunal Mehndiratta', 'Student at NIT Kurukshetra', 'Hope You Like the Website'],
+            typeSpeed: 50,
+            loop : true
+        }
+        var typed = new Typed('#element', options);
+    </script>
+
 
     <footer>
         <div class="footer">

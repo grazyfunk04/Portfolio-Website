@@ -127,14 +127,14 @@ nav ul li a:hover{
 /* ====FIRST SECTION CSS==== */
 #element{
     color: rgb(170, 107, 228);
-    font-size: 3rem;
+    font-size: 4rem;
     font-family: 'Poppins', sans-serif;
     font-weight: bold;
     
 }
 
 .firstSection{
-    font-size: 3rem;
+    font-size: 4rem;
     font-weight: bold;
     margin: 40px 0;
 }
