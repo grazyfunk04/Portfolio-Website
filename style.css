@@ -228,7 +228,7 @@ nav ul li a:hover{
 .secondSectionGrid{
     display: grid;
     grid-template-columns: max-content max-content;
-    column-gap: 350px;
+    column-gap: 300px;
     row-gap: 100px;
     justify-content: center;
     text-align: center;
