@@ -224,18 +224,24 @@ nav ul li a:hover{
 .secondSection{
     height: 130vh;
 }
-.secondSectiontopSection{
-    display: flex;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
-    flex: 50%;
+
+.secondSectionGrid{
+    display: grid;
+    grid-template-columns: max-content max-content;
+    column-gap: 350px;
+    row-gap: 100px;
+    justify-content: center;
+    text-align: center;
+    margin-top: 50px;
+    padding: 5px 0;
 }
+
 
 #education{
     transition: transform .3s;
-    height: 270px;
-    width: 270px;
-    border-radius: 15px;
+    height: 250px;
+    width: 250px;
+    border-radius: 50px;
 }
 
 #education:hover{
@@ -244,20 +250,15 @@ nav ul li a:hover{
 
 #projects{
     transition: transform .3s;
-    height: 270px;
-    width: 270px;
-    border-radius: 25px;
+    height: 250px;
+    width: 250px;
+    border-radius: 50px;
 }
 
 #projects:hover{
     transform:scale(1.1);
 }
 
-.secondSectionbottomSection{
-    display: flex;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
-}
 
 .secondSectiontitle{
     text-align: center;
@@ -269,9 +270,9 @@ nav ul li a:hover{
 
 #experience{
     transition: transform .3s;
-    height: 270px;
-    width: 270px;
-    border-radius: 25px;
+    height: 250px;
+    width: 250px;
+    border-radius: 50px;
 }
 
 #experience:hover{
@@ -280,49 +281,34 @@ nav ul li a:hover{
 
 #interest{
     transition: transform .3s;
-    height: 270px;
-    width: 270px;
-    border-radius: 25px;
+    height: 250px;
+    width: 250px;
+    border-radius: 50px;
 }
 
 #interest:hover{
     transform:scale(1.1);
 }
 
-.secondSectiontopSectionVal{
-    display: flex;
-}
 
 #first{
-    margin-left: 410px;
-    justify-content: space-evenly;
-    margin-bottom: 50px;
-    margin-top: 35px;
+    font-size: 1.5rem;
+    margin-top: 120px;
 }
 
 #second{
-    margin-left: 480px;
-    justify-content: space-evenly;
-    margin-bottom: 50px;
-    margin-top: 35px;
-}
-
-.secondSectionbottomSectionVal{
-    display: flex;
+    font-size: 1.5rem;
+    margin-top: 120px;
 }
 
 #third{
-    margin-left: 395px;
-    justify-content: space-evenly;
-    margin-bottom: 50px;
-    margin-top: 35px;
+    font-size: 1.5rem;
+    margin-top: 120px;
 }
 
 #fourth{
-    margin-left: 480px;
-    justify-content: space-evenly;
-    margin-bottom: 50px;
-    margin-top: 35px;
+    font-size: 1.5rem;
+    margin-top: 120px;
 }
 
 
