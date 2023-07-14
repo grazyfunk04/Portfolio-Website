@@ -40,17 +40,21 @@ nav ul li a:hover{
     color: rgb(250, 250, 250);
     font-size: 1.02rem;
     text-decoration: none; 
-    border-bottom:2.5px solid red;
+    border-bottom:2.5px solid aqua;
 }
 
 .left{
-    font-size: 1.6rem;
+    font-size: 1.9rem;
     font-weight: bold;
 }
 
 .left a{
     text-decoration: none !important;
     color: rgb(250, 250, 250);
+}
+
+.left a:hover{
+    color: aqua;
 }
 
 .toggle_btn{
@@ -74,7 +78,7 @@ nav ul li a:hover{
     color: rgb(239, 239, 247);
     font-size: 1.02rem;
     text-decoration: none; 
-    border-bottom:2.5px solid red;
+    border-bottom:2.5px solid aqua;
 }
 
 .dropdown_menu{
@@ -126,7 +130,7 @@ nav ul li a:hover{
 
 /* ====FIRST SECTION CSS====*/
 #element{
-    color: rgb(170, 107, 228);
+    color: aqua;
     font-size: 4rem;
     font-family: 'Poppins', sans-serif;
     font-weight: bold;
@@ -176,106 +180,74 @@ nav ul li a:hover{
     font-weight: bold;
 }
 
+@keyframes float{
+    0%{
+        transform: translateY(0);
+    }
+    50%{
+        transform: translateY(-2.5rem);
+    }
+    100%{
+        transform: translateY(0);
+    }
+}
+
 .first img{
     width: 350px;
     height: 350px;
-    border-radius: 60px;
+    border-radius: 20%;
+    animation: float 5s ease-in-out infinite;
 }
 
 .second img{
     width: 350px;
     height: 350px;
-    border-radius: 60px;
+    border-radius: 20%;
+    animation: float 5s ease-in-out infinite;
 }
 
 .third img{
     width: 350px;
     height: 350px;
-    border-radius: 60px;
+    border-radius: 20%;
+    animation: float 5s ease-in-out infinite;
 }
 .fourth img{
     width: 350px;
     height: 350px;
-    border-radius: 60px;
+    border-radius: 20%;
+    animation: float 5s ease-in-out infinite;
 }
 .fifth img{
     width: 350px;
     height: 350px;
-    border-radius: 60px;
+    border-radius: 20%;
+    animation: float 5s ease-in-out infinite;
 }
 .sixth img{
     width: 350px;
     height: 350px;
-    border-radius: 60px;
+    border-radius: 20%;
+    animation: float 5s ease-in-out infinite;
 }
 .seventh img{
     width: 350px;
     height: 350px;
-    border-radius: 60px;
+    border-radius: 20%;
+    animation: float 5s ease-in-out infinite;
 }
 .eight img{
     width: 350px;
     height: 350px;
-    border-radius: 60px;
+    border-radius: 20%;
+    animation: float 5s ease-in-out infinite;
 }
 .nineth img{
     width: 350px;
     height: 350px;
-    border-radius: 60px;
+    border-radius: 20%;
+    animation: float 5s ease-in-out infinite;
 }
-
-/* .first{
-    display: flex;
-    justify-content: space-evenly;
-    margin: 35px 0;
-    flex-wrap: wrap;
-} */
-
-/* .firstTitle{
-    display: flex;
-    justify-content: space-around;
-    padding: 0 70px;
-    margin-bottom: 25px;
-    font-size: 1.5rem;
-    font-weight: bold;
-    font-family: "Poppins", sans-serif;
-} */
-
-/* .second{
-    display: flex;
-    justify-content: space-evenly;
-    margin: 35px 0;
-    flex-wrap: wrap;
-} */
-
-/*
-.secondTitle{
-    display: flex;
-    justify-content: space-around;
-    padding: 0 30px;
-    margin-top: 25px;
-    font-size: 1.5rem;
-    font-weight: bold;
-    font-family: "Poppins", sans-serif;
-} */
-
-
-/* .third{
-    display: flex;
-    justify-content: space-evenly;
-    margin: 35px 0;
-    flex-wrap: wrap;
-}
-
-.thirdTitle{
-    display: flex;
-    justify-content: space-around;
-    font-size: 1.5rem;
-    padding: 0 40px;
-} */
-
-
-
 
 /* ====FOOTER CSS==== */
 footer{
@@ -288,7 +260,7 @@ footer{
 }
 
 .footer_name{
-    font-size: 1.6rem;
+    font-size: 1.9rem;
     font-weight: 400;
     margin-top: 46px;
     margin-left: 35px;
@@ -297,6 +269,10 @@ footer{
 .footer_name a{
     text-decoration: none;
     color: rgb(250, 250, 250);
+}
+
+.footer_name a:hover{
+    color: aqua;
 }
 
 .data{
@@ -325,7 +301,7 @@ footer{
     color: rgb(250, 250, 250);
     font-size: 1.02rem;
     text-decoration: none; 
-    border-bottom:2.5px solid red;
+    border-bottom:2.5px solid aqua;
 }
 
 .handles{
@@ -335,47 +311,75 @@ footer{
 
 .handles a{
     text-decoration: none;
+    
 }
 
 #github{
     display: flex;
     justify-content: space-around;
-    width: 30px;
-    height: 30px;
+    width: 2.0rem;
+    height: 2.0rem;
     margin: 45px 5px;
     color: rgb(250, 250, 250);
     font-size: 2.0rem;
+    transform: 0.4s ease;
+    border-radius: 50%;
 }
 
+#github:hover{
+    color: aqua;
+    box-shadow: 0 0 1rem aqua;
+}
 
 #instagram{
     display: flex;
     justify-content: space-around;
-    width: 30px;
-    height: 30px;
+    width: 2.0rem;
+    height: 2.0rem;
     margin: 45px 5px;
     color: rgb(250, 250, 250);
     font-size: 2.0rem;
+    transform: 0.4s ease;
+    border-radius: 50%;
+}
+
+#instagram:hover{
+    color: aqua;
+    box-shadow: 0 0 1rem aqua;
 }
 
 #whatsapp{
     display: flex;
     justify-content: space-around;
-    width: 30px;
-    height: 30px;
+    width: 2.0rem;
+    height: 2.0rem;
     margin: 45px 5px;
     color: rgb(250, 250, 250);
     font-size: 2.0rem;
+    transform: 0.4s ease;
+    border-radius: 50%;
+}
+
+#whatsapp:hover{
+    color: aqua;
+    box-shadow: 0 0 1rem aqua;
 }
 
 #linkedin{
     display: flex;
     justify-content: space-around;
-    width: 30px;
-    height: 30px;
+    width: 2.0rem;
+    height: 2.0rem;
     margin: 45px 5px;
     color: rgb(250, 250, 250);
     font-size: 2.0rem;
+    transform: 0.4s ease;
+    border-radius: 50%;
+}
+
+#linkedin:hover{
+    color: aqua;
+    box-shadow: 0 0 1rem aqua;
 }
 
 .footer-rights{

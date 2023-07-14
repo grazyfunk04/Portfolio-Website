@@ -40,12 +40,16 @@ nav ul li a:hover{
     color: rgb(250, 250, 250);
     font-size: 1.02rem;
     text-decoration: none; 
-    border-bottom:2.5px solid red;
+    border-bottom:2.5px solid aqua;
 }
 
 .left{
-    font-size: 1.6rem;
+    font-size: 1.9rem;
     font-weight: bold;
+}
+
+.left a:hover{
+    color: aqua;
 }
 
 .left a{
@@ -74,7 +78,7 @@ nav ul li a:hover{
     color: rgb(239, 239, 247);
     font-size: 1.02rem;
     text-decoration: none; 
-    border-bottom:2.5px solid red;
+    border-bottom:2.5px solid aqua;
 }
 
 .dropdown_menu{
@@ -124,7 +128,90 @@ nav ul li a:hover{
     }
 }
 
+/* FIRST SECTION CSS */
+#element{
+    color: aqua;
+    font-size: 4rem;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+}
 
+.firstSection{
+    font-size: 4rem;
+    font-weight: bold;
+    margin: 40px 0;
+}
+
+.firstSection > div{
+    display: flex;
+    justify-content: center;
+    height: 15vh;
+}
+
+.typed_cursor{
+    opacity: 1;
+}
+
+.typed_cursor.typed_cursor--blink{
+    animation: typedjsBlink 0.8s infinite;
+    -webkit-animation: typedjsBlink 0.8s infinite;
+            animation: typedjsBlink 0.8s infinite;
+}
+
+.purple{
+    color: aqua
+}
+
+/* ====SECOND SECTION CSS==== */
+.contact_section{
+    text-align: center;
+    color: rgb(250, 250, 250);
+    font-size: 3.4rem;
+    font-family: "Poppins", sans-serif;
+    margin: 2rem;
+}
+.contact{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 4rem;
+}
+
+form{
+    display: grid;
+    row-gap: 1rem;
+}
+
+form input, textarea{
+    width: 100%;
+    padding: 1rem;
+    font-size: 1.5rem;
+    color: #fff;
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 1.5rem;
+    resize: none;
+    font-family: 'Poppins', sans-serif;
+}
+
+.btn{
+    display: inline-block;
+    background: aqua;
+    margin: 2rem 0;
+    padding: 1rem 2.5rem;
+    border-radius: 1.3rem;
+    font-size: 1.3rem;
+    color: #000;
+    font-weight: 600;
+    transition: 0.5s ease;
+}
+
+.btn:hover{
+    color: aqua;
+    background: #000;
+    box-shadow: 0 0 1rem aqua;
+    border-radius: none;
+}
 
 /* ====FOOTER CSS==== */
 footer{
@@ -137,7 +224,7 @@ footer{
 }
 
 .footer_name{
-    font-size: 1.6rem;
+    font-size: 1.9rem;
     font-weight: 400;
     margin-top: 46px;
     margin-left: 35px;
@@ -146,6 +233,10 @@ footer{
 .footer_name a{
     text-decoration: none;
     color: rgb(250, 250, 250);
+}
+
+.footer_name a:hover{
+    color: aqua;
 }
 
 .data{
@@ -174,7 +265,7 @@ footer{
     color: rgb(250, 250, 250);
     font-size: 1.02rem;
     text-decoration: none; 
-    border-bottom:2.5px solid red;
+    border-bottom:2.5px solid aqua;
 }
 
 .handles{
@@ -184,47 +275,75 @@ footer{
 
 .handles a{
     text-decoration: none;
+    
 }
 
 #github{
     display: flex;
     justify-content: space-around;
-    width: 30px;
-    height: 30px;
+    width: 2.0rem;
+    height: 2.0rem;
     margin: 45px 5px;
     color: rgb(250, 250, 250);
     font-size: 2.0rem;
+    transform: 0.4s ease;
+    border-radius: 50%;
 }
 
+#github:hover{
+    color: aqua;
+    box-shadow: 0 0 1rem aqua;
+}
 
 #instagram{
     display: flex;
     justify-content: space-around;
-    width: 30px;
-    height: 30px;
+    width: 2.0rem;
+    height: 2.0rem;
     margin: 45px 5px;
     color: rgb(250, 250, 250);
     font-size: 2.0rem;
+    transform: 0.4s ease;
+    border-radius: 50%;
+}
+
+#instagram:hover{
+    color: aqua;
+    box-shadow: 0 0 1rem aqua;
 }
 
 #whatsapp{
     display: flex;
     justify-content: space-around;
-    width: 30px;
-    height: 30px;
+    width: 2.0rem;
+    height: 2.0rem;
     margin: 45px 5px;
     color: rgb(250, 250, 250);
     font-size: 2.0rem;
+    transform: 0.4s ease;
+    border-radius: 50%;
+}
+
+#whatsapp:hover{
+    color: aqua;
+    box-shadow: 0 0 1rem aqua;
 }
 
 #linkedin{
     display: flex;
     justify-content: space-around;
-    width: 30px;
-    height: 30px;
+    width: 2.0rem;
+    height: 2.0rem;
     margin: 45px 5px;
     color: rgb(250, 250, 250);
     font-size: 2.0rem;
+    transform: 0.4s ease;
+    border-radius: 50%;
+}
+
+#linkedin:hover{
+    color: aqua;
+    box-shadow: 0 0 1rem aqua;
 }
 
 .footer-rights{

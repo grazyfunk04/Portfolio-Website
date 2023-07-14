@@ -40,17 +40,21 @@ nav ul li a:hover{
     color: rgb(250, 250, 250);
     font-size: 1.02rem;
     text-decoration: none; 
-    border-bottom:2.5px solid red;
+    border-bottom:2.5px solid aqua;
 }
 
 .left{
-    font-size: 1.6rem;
+    font-size: 1.9rem;
     font-weight: bold;
 }
 
 .left a{
     text-decoration: none !important;
     color: rgb(250, 250, 250);
+}
+
+.left a:hover{
+    color: aqua;
 }
 
 .toggle_btn{
@@ -74,7 +78,7 @@ nav ul li a:hover{
     color: rgb(239, 239, 247);
     font-size: 1.02rem;
     text-decoration: none; 
-    border-bottom:2.5px solid red;
+    border-bottom:2.5px solid aqua;
 }
 
 .dropdown_menu{
@@ -124,9 +128,13 @@ nav ul li a:hover{
     }
 }
 
+.purple{
+    color: aqua
+}
+
 /* ====FIRST SECTION CSS==== */
 #element{
-    color: rgb(170, 107, 228);
+    color: aqua;
     font-size: 4rem;
     font-family: 'Poppins', sans-serif;
     font-weight: bold;
@@ -185,11 +193,30 @@ nav ul li a:hover{
     width: 300px;
     height: 300px;
     border: 8px solid white;
-    border-radius: 25px;
     margin-bottom: 30px;
+    border-radius: 30%;
+    animation: float 5s ease-in-out infinite;
+}
+
+@keyframes float{
+    0%{
+        transform: translateY(0);
+    }
+    50%{
+        transform: translateY(-2.5rem);
+    }
+    100%{
+        transform: translateY(0);
+    }
 }
 
 /* ====THIRD SECTION CSS==== */
+.thirdSectionDiv{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 3rem;
+}
+
 
 .leetcode{
     display: flex;
@@ -199,7 +226,6 @@ nav ul li a:hover{
     font-size: 2rem;
     font-weight: bold;
     font-family: 'Poppins', sans-serif;
-    margin: 100px 0;
 }
 .geeksforgeeks{
     display: flex;
@@ -209,7 +235,6 @@ nav ul li a:hover{
     font-size: 2rem;
     font-weight: bold;
     font-family: 'Poppins', sans-serif;
-    margin: 100px 0;
 }
 .hackerrank{
     display: flex;
@@ -219,7 +244,6 @@ nav ul li a:hover{
     font-size: 2rem;
     font-weight: bold;
     font-family: 'Poppins', sans-serif;
-    margin: 100px 0;
 }
 .codechef{
     display: flex;
@@ -229,7 +253,6 @@ nav ul li a:hover{
     font-size: 2rem;
     font-weight: bold;
     font-family: 'Poppins', sans-serif;
-    margin: 100px 0;
 }
 .github{
     display: flex;
@@ -239,14 +262,12 @@ nav ul li a:hover{
     font-size: 2rem;
     font-weight: bold;
     font-family: 'Poppins', sans-serif;
-    margin: 100px 0;
 }
 
 #leetcode{
     width: 300px;
     height: 300px;
     border-radius: 30px;
-    margin-bottom: 10px;
     transition: transform .3s;
 }
 
@@ -258,7 +279,6 @@ nav ul li a:hover{
     width: 300px;
     height: 300px;
     border-radius: 30px;
-    margin-bottom: 10px;
     transition: transform .3s;
 }
 
@@ -270,7 +290,6 @@ nav ul li a:hover{
     width: 300px;
     height: 300px;
     border-radius: 30px;
-    margin-bottom: 10px;
     transition: transform .3s;
 }
 
@@ -282,7 +301,6 @@ nav ul li a:hover{
     width: 300px;
     height: 300px;
     border-radius: 30px;
-    margin-bottom: 10px;
     transition: transform .3s;
 }
 
@@ -294,7 +312,6 @@ nav ul li a:hover{
     width: 300px;
     height: 300px;
     border-radius: 30px;
-    margin-bottom: 10px;
     transition: transform .3s;
 }
 
@@ -321,7 +338,7 @@ footer{
 }
 
 .footer_name{
-    font-size: 1.6rem;
+    font-size: 1.9rem;
     font-weight: 400;
     margin-top: 46px;
     margin-left: 35px;
@@ -330,6 +347,10 @@ footer{
 .footer_name a{
     text-decoration: none;
     color: rgb(250, 250, 250);
+}
+
+.footer_name a:hover{
+    color: aqua;
 }
 
 .data{
@@ -358,7 +379,7 @@ footer{
     color: rgb(250, 250, 250);
     font-size: 1.02rem;
     text-decoration: none; 
-    border-bottom:2.5px solid red;
+    border-bottom:2.5px solid aqua;
 }
 
 .handles{
@@ -368,47 +389,75 @@ footer{
 
 .handles a{
     text-decoration: none;
+    
 }
 
 #github{
     display: flex;
     justify-content: space-around;
-    width: 30px;
-    height: 30px;
+    width: 2.0rem;
+    height: 2.0rem;
     margin: 45px 5px;
     color: rgb(250, 250, 250);
     font-size: 2.0rem;
+    transform: 0.4s ease;
+    border-radius: 50%;
 }
 
+#github:hover{
+    color: aqua;
+    box-shadow: 0 0 1rem aqua;
+}
 
 #instagram{
     display: flex;
     justify-content: space-around;
-    width: 30px;
-    height: 30px;
+    width: 2.0rem;
+    height: 2.0rem;
     margin: 45px 5px;
     color: rgb(250, 250, 250);
     font-size: 2.0rem;
+    transform: 0.4s ease;
+    border-radius: 50%;
+}
+
+#instagram:hover{
+    color: aqua;
+    box-shadow: 0 0 1rem aqua;
 }
 
 #whatsapp{
     display: flex;
     justify-content: space-around;
-    width: 30px;
-    height: 30px;
+    width: 2.0rem;
+    height: 2.0rem;
     margin: 45px 5px;
     color: rgb(250, 250, 250);
     font-size: 2.0rem;
+    transform: 0.4s ease;
+    border-radius: 50%;
+}
+
+#whatsapp:hover{
+    color: aqua;
+    box-shadow: 0 0 1rem aqua;
 }
 
 #linkedin{
     display: flex;
     justify-content: space-around;
-    width: 30px;
-    height: 30px;
+    width: 2.0rem;
+    height: 2.0rem;
     margin: 45px 5px;
     color: rgb(250, 250, 250);
     font-size: 2.0rem;
+    transform: 0.4s ease;
+    border-radius: 50%;
+}
+
+#linkedin:hover{
+    color: aqua;
+    box-shadow: 0 0 1rem aqua;
 }
 
 .footer-rights{

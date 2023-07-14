@@ -7,18 +7,19 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style_about.css">
+    <link rel="stylesheet" href="style_contact.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet" />
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
     <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' 
+    rel='stylesheet'>
 </head>
 <body>
     <header>
@@ -36,41 +37,69 @@
                 </div>
             </div>
             <div class="dropdown_menu">
-                <li><a href="./public/home.html">Home</a></li>
-                <li><a href="./public/about.html">About</a></li>
-                <li><a href="./public/projects.html">Projects</a></li>
-                <li><a href="./public/contact_me.html">Contact Me</a></li>
+                <li><a href="./home.html">Home</a></li>
+                    <li><a href="./about.html">About</a></li>
+                    <li><a href="./projects.html">Projects</a></li>
+                    <li><a href="./contact_me.html">Contact Me</a></li>
             </div>
         </nav>
     </header>
     <script src="logic.js"></script>
 
     <main>
+        <section class="firstSection">
+            <div>
+                <span id="element" class="typed_cursor"></span>
+            </div>
+        </section>
+
+        <section class="contact" id="contact">
+            <h2 class="contact_section">&lt; Contact <span class="purple">Me</span> &gt;</h2>
+    
+            <form action="#" class="form">
+                <input type="text" placeholder="Your Name">
+                <input type="email" placeholder="Your Email">
+                <textarea name="" id="" cols="30" rows="6" placeholder="Your Message"></textarea>
+                <input type="submit" class="btn" value="Send Message">
+            </form>
+        </section>
     </main>
+
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script>
+        var options = {
+            strings: ['Welcome to Contact Section', 'My Name is Kunal Mehndiratta', 'Student at NIT Kurukshetra', 'Please Fill the Form'],
+            typeSpeed: 50,
+            loop : true
+        }
+        var typed = new Typed('#element', options);
+    </script>
 
     <footer>
         <div class="footer">
             <div class="footer_name">
-                <a href="../index.html"><h3>Kunal's Portfolio</h3></a>
+                <a href="./index.html"><h3>Kunal's Portfolio</h3></a>
             </div>
             <div class="data">
                 <ul>
-                    <li><a href="./home.html">Home</a></li>
-                    <li><a href="./about.html">About</a></li>
-                    <li><a href="./projects.html">Projects</a></li>
-                    <li><a href="./contact_me.html">Contact Me</a></li>
+                    <li><a href="./public/home.html">Home</a></li>
+                    <li><a href="./public/about.html">About</a></li>
+                    <li><a href="./public/projects.html">Projects</a></li>
+                    <li><a href="./public/contact_me.html">Contact Me</a></li>
                 </ul>
             </div>
             <div class="handles">
-                <a href="https://github.com/grazyfunk04" target="_blank"><i class="fa fa-github" id="github"></i></a>
-                <i class="fa fa-instagram" id="instagram"></i>
-                <a href="https://www.linkedin.com/in/kunal-mehndiratta-a48688224/" target="_blank"><i class="fa fa-linkedin-square" id="linkedin"></i></a>
-                <a href="./contact_me.html" target="_blank"><i class="fa fa-whatsapp" id="whatsapp"></i></a>
+                <a href="https://github.com/grazyfunk04" target="_blank"><i class='bx bxl-github' id="github"></i></a>
+                <i class='bx bxl-instagram' id="instagram"></i>
+                <a href="https://www.linkedin.com/in/kunal-mehndiratta-a48688224/" target="_blank"><i class='bx bxl-linkedin' id="linkedin"></i></a>
+                <a href="./public/contact_me.html" target="_blank"><i class='bx bxl-whatsapp' id="whatsapp"></i></a>
             </div>
         </div>
         <div class="footer-rights">
             © Copyright | All rights reserved
         </div>
     </footer>
+
+    <script src="https://unpkg.com/scrollreveal"></script>
 </body>
 </html>
