@@ -14,6 +14,8 @@
     <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' 
+    rel='stylesheet'>
 </head>
 <body>
     <header>
@@ -22,7 +24,7 @@
             <div class="right">
                 <ul class="links">
                     <li><a href="./public/home.html">Home</a></li>
-                    <li><a href="./public/about.html">About</a></li>
+                    <li><a href="#aboutMeSection">About</a></li>
                     <li><a href="./public/projects.html">Projects</a></li>
                     <li><a href="./public/contact_me.html">Contact Me</a></li>
                 </ul>
@@ -40,15 +42,14 @@
     </header>
     <script src="logic.js"></script>
 
-    <main>
         <section class="firstSection">
             <div class="leftSection">
                 <div>Hi, My Name is <span class="purple">Kunal</span></div>
                 <div>and I am a passionate</div>
                 <span id="element"></span>
                 <div class="buttons">
-                    <button class="btn"><a href="./resources/Resume.pdf" id="resume_visit" target="_blank">Download Resume</a></button>
-                    <button class="btn"><a href="https://github.com/grazyfunk04" id="github_visit" target="_blank">Visit Github</a></button>
+                    <a href="./resources/Resume.pdf" id="resume_visit" target="_blank" class="btn">Download Resume</a>
+                    <a href="https://github.com/grazyfunk04" id="github_visit" target="_blank" class="btn">Visit Github</a>
                 </div>
             </div>
             <div class="rightSection">
@@ -56,83 +57,115 @@
             </div>
         </section>
 
-        <section class="resume-section p-3 p-lg-5" id="skills">
-            <h2 class="mb-4 blue">&lt; Technologies and Skills &gt;</h2>
-            <div class="my-auto">
-              <ul class="list-inline list-icons mb-4">
-                <li class="list-inline-item">
-                  <i class="devicon-html5-plain" title="HTML5"></i>
-                </li>
-                <li class="list-inline-item">
-                  <i class="devicon-css3-plain" title="CSS3"></i>
-                </li>
-                <li class="list-inline-item">
-                  <i class="devicon-javascript-plain" title="JavaScript"></i>
-                </li>
-                <li class="list-inline-item">
-                    <i class="devicon-nodejs-plain" title="Node.js"></i>
-                </li>
-        
-                <li class="list-inline-item">
-                    <i class="devicon-express-original" title="Express.js"></i>
-                </li>
-        
-                <li class="list-inline-item">
-                    <i class="devicon-react-original" title="ReactJs"></i>
-                </li>
-                <li class="list-inline-item">
-                    <i class="devicon-android-plain" title="Android"></i>
-                </li>
-        
-                <li class="list-inline-item">
-                    <i class="devicon-photoshop-plain" title="Photoshop"></i>
-                </li>
-                <li class="list-inline-item">
-                  <i class="devicon-github-plain" title="Github"></i>
-                </li>
-              </ul>
-          </section>
-
-        <section class="secondSection">
-            <h2 class="secondSectiontitle">&lt; Quick Links &gt;</h2>
-            <div class="secondSectionGrid">
-                <div class="secondSectiontopSection">
-                    <div><a href="./public/education.html"><img src="./resources/education.png" alt="education" id="education"></a></div>
-                    <span id="first"><h2>Education</h2></span>
+        <section class="skills" id="skills">
+              <h2 class="skills_title">&lt; My <span class="purple">Skills</span> &gt;</h2>
+            <div class="skills-items">
+                <div class="skill-card">
+                    <i class='bx bxl-html5' ></i>
+                    <h3>HTML</h3>
                 </div>
-                <div class="secondSectiontopSectionVal">
-                    <div><a href="./public/projects.html"><img src="./resources/projects.png" alt="projects" id="projects"></a></div>
-                    <span id="second"><h2>Projects</h2></span>
+    
+                <div class="skill-card">
+                    <i class='bx bxl-css3' ></i>
+                    <h3>CSS</h3>
+                    
+                </div>
+    
+                <div class="skill-card">
+                    <i class='bx bxl-javascript' ></i>
+                    <h3>JavaScript</h3>
+                </div>
+    
+                <div class="skill-card">
+                    <i class='bx bxl-nodejs' ></i>
+                    <h3>Node Js</h3>
+                </div>
+    
+                <div class="skill-card">
+                    <i class='bx bxl-react' ></i>
+                    <h3>React Js</h3>
+                </div>
+    
+                <div class="skill-card">
+                    <i class='bx bxl-android'></i>
+                    <h3>Android</h3>
                 </div>
 
-                <div class="secondSectionbottomSection">
-                    <div><a href="./public/about.html"><img src="./resources/experience.png" alt="experience" id="experience"></a></div>
-                    <span id="third"><h2>Experience</h2></span>
+                <div class="skill-card">
+                    <i class='bx bxl-github' ></i>
+                    <h3>Github</h3>
                 </div>
-                <div class="secondSectionbottomSectionVal">
-                    <div><a href="./public/interest.html"><img src="./resources/interest.png" alt="interest" id="interest"></a></div>
-                    <span id="fourth"><h2>Interest</h2></span>
+
+                <div class="skill-card">
+                    <i class='bx bxl-python'></i>
+                    <h3>Python</h3>
+                </div>
+
+                <div class="skill-card" value="cplus">
+                    <i class='bx bxl-c-plus-plus' ></i>
+                    <h3>C++</h3>
                 </div>
             </div>
         </section>
 
-        <h2 class="aboutMetitle">&lt; Who I am &gt;</h2>
-        <section class="aboutMeSection">
+        <section class="projects">
+            <h2 class="secondSectiontitle">&lt; Quick <span class="purple">Links</span> &gt;</h2>
+            <div class="projects-items">
+                <div class="project-card">
+                    <img src="./resources/education.png" alt="education">
+                    <div class="card-overlay">
+                        <a href="./public/education.html">
+                            <i class='bx bx-link-alt' id="link"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <img src="./resources/projects.png" alt="projects">
+                    <div class="card-overlay">
+                        <a href="./public/projects.html">
+                            <i class='bx bx-link-alt' id="link"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="project-card">
+                    <img src="./resources/experience.png" alt="experience">
+                    <div class="card-overlay">
+                        <a href="./public/about.html">
+                            <i class='bx bx-link-alt' id="link"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="project-card">
+                    <img src="./resources/interest.png" alt="interest">
+                    <div class="card-overlay">
+                        <a href="./public/interest.html">
+                            <i class='bx bx-link-alt' id="link"></i>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <section class="aboutMeSection" id="aboutMeSection">
+            <h2 class="aboutMetitle">&lt; Who I <span class="purple">am</span> &gt;</h2>
             <div id="aboutMe">
                 <div class="aboutMeleftSection">
                     <img src="./resources/img2.png" alt="aboutMeimg" id="aboutMeimg">
                 </div>
-                <div class="content">Welcome to My Portfolio Website. My name is Kunal Mehndiratta. I am currently pursuing BTech from NIT Kurukshetra in Information Technology.
+                <div class="content" id="content">Welcome to My Portfolio Website. My name is Kunal Mehndiratta. I am currently pursuing BTech from NIT Kurukshetra in Information Technology.
                     I am a passionate Tech Enthusiast who keeps learning new Technologies. 
                     I want to explore each and every domain of IT. I am currently exploring field of UI/UX designing and Android Developement.
                     I have expertise in HTML, CSS, JS, React, Node.js etc.
                     I love programming, my favourite programming language is C++ and Python. 
-                    <button class="aboutMeReadMore"><a href="./public/about.html" id="github_visit">Read More</a>
-                    </button>
+                    <br>
+                    <button class="aboutMeReadMore" id="aboutMeReadMore"><a href="./public/about.html">Read More</a></button>
                 </div>
             </div>
         </section>
-    </main>
     <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
     <script>
         var options = {
@@ -157,15 +190,17 @@
                 </ul>
             </div>
             <div class="handles">
-                <a href="https://github.com/grazyfunk04" target="_blank"><i class="fa fa-github" id="github"></i></a>
-                <i class="fa fa-instagram" id="instagram"></i>
-                <a href="https://www.linkedin.com/in/kunal-mehndiratta-a48688224/" target="_blank"><i class="fa fa-linkedin-square" id="linkedin"></i></a>
-                <a href="./public/contact_me.html" target="_blank"><i class="fa fa-whatsapp" id="whatsapp"></i></a>
+                <a href="https://github.com/grazyfunk04" target="_blank"><i class='bx bxl-github' id="github"></i></a>
+                <i class='bx bxl-instagram' id="instagram"></i>
+                <a href="https://www.linkedin.com/in/kunal-mehndiratta-a48688224/" target="_blank"><i class='bx bxl-linkedin' id="linkedin"></i></a>
+                <a href="./public/contact_me.html" target="_blank"><i class='bx bxl-whatsapp' id="whatsapp"></i></a>
             </div>
         </div>
         <div class="footer-rights">
             © Copyright | All rights reserved
         </div>
     </footer>
+
+    <script src="https://unpkg.com/scrollreveal"></script>
 </body>
 </html>

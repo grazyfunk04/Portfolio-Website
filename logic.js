@@ -10,3 +10,13 @@ toggleBtn.onclick = function (){
      ? 'fa-solid fa-xmark'
      : 'fa-solid fa-bars'
 }
+
+ScrollReveal({
+    reset: true,
+    distance: '100px',
+    duration: 2000, 
+    delay: 200,
+});
+
+ScrollReveal().reveal('#aboutMeimg', {origin: 'left'});
+ScrollReveal().reveal('.content', {origin: 'right'});

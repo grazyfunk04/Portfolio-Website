@@ -1,6 +1,15 @@
 *{
     margin: 0;
     padding: 0;
+    outline: none;
+    text-decoration: none;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+html{
+    font-size: 96.5%;
+    overflow-x: hidden;
 }
 
 body{
@@ -40,17 +49,21 @@ nav ul li a:hover{
     color: rgb(250, 250, 250);
     font-size: 1.02rem;
     text-decoration: none; 
-    border-bottom:2.5px solid red;
+    border-bottom:2.5px solid aqua;
 }
 
 .left{
-    font-size: 1.6rem;
+    font-size: 1.9rem;
     font-weight: bold;
 }
 
 .left a{
     text-decoration: none !important;
     color: rgb(250, 250, 250);
+}
+
+.left a:hover{
+    color: aqua;
 }
 
 .toggle_btn{
@@ -74,7 +87,7 @@ nav ul li a:hover{
     color: rgb(239, 239, 247);
     font-size: 1.02rem;
     text-decoration: none; 
-    border-bottom:2.5px solid red;
+    border-bottom:2.5px solid aqua;
 }
 
 .dropdown_menu{
@@ -128,8 +141,22 @@ nav ul li a:hover{
 /* ====FIRST SECTION CSS==== */
 #image_1{
     backdrop-filter: blur(12px);
+    border: 5px solid rgb(11, 12, 12);;
+    border-radius: 60%;
+    animation: float 5s ease-in-out infinite;
     border: 5px solid white;
-    border-radius: 105px;
+}
+
+@keyframes float{
+    0%{
+        transform: translateY(0);
+    }
+    50%{
+        transform: translateY(-2.5rem);
+    }
+    100%{
+        transform: translateY(0);
+    }
 }
 
 .firstSection{
@@ -148,41 +175,28 @@ nav ul li a:hover{
     font-weight: bold;
 }
 
-#github_visit{
-    text-decoration: none;
-    color: white;
-}
-
-#github_visit:hover{
-    font-size: 1.1rem;
-}
-
 .leftSection .buttons{
     padding: 50px 0;
 }
+
 .leftSection .btn{
     padding:12px;
-    background: rgb(170, 107, 228);
-    color: white;
+    background: aqua;
+    color: #000;
     border: 4px solid white;
-    border-radius: 6px;
-    font-size: 1.04rem;
     cursor: pointer;
     font-weight: bold;
     font-family: 'Poppins', sans-serif;
+    border-radius: 1.3rem;
+    font-size: 1.3rem;
+    transition: 0.5s ease;
+    margin: 1rem 1.5rem 0 0 ;
 }
 
-#resume_visit{
-    text-decoration: none;
-    color: white;
-}
-
-#resume_visit:visited{
-    color:white
-}
-
-#resume_visit:hover{
-    font-size: 1.1rem;
+.leftSection .btn:hover{
+    color: aqua;
+    background: #000;
+    box-shadow: 0 0 1.2rem aqua;
 }
 
 .rightSection img{
@@ -190,14 +204,14 @@ nav ul li a:hover{
     margin: 50px 0;
 }
 .purple{
-    color: rgb(170, 107, 228);
+    color: aqua
 }
 .text-gray{
     color: gray;
 }
 
 #element{
-    color: rgb(170, 107, 228);
+    color: aqua
 }
 
 @media(max-width: 1500px){
@@ -221,45 +235,6 @@ nav ul li a:hover{
 }
 
 /* ====SECOND SECTION CSS==== */
-.secondSection{
-    height: 130vh;
-}
-
-.secondSectionGrid{
-    display: grid;
-    grid-template-columns: max-content max-content;
-    column-gap: 300px;
-    row-gap: 100px;
-    justify-content: center;
-    text-align: center;
-    margin-top: 50px;
-    padding: 5px 0;
-}
-
-
-#education{
-    transition: transform .3s;
-    height: 250px;
-    width: 250px;
-    border-radius: 50px;
-}
-
-#education:hover{
-    transform:scale(1.1);
-}
-
-#projects{
-    transition: transform .3s;
-    height: 250px;
-    width: 250px;
-    border-radius: 50px;
-}
-
-#projects:hover{
-    transform:scale(1.1);
-}
-
-
 .secondSectiontitle{
     text-align: center;
     color: rgb(250, 250, 250);
@@ -268,100 +243,134 @@ nav ul li a:hover{
     margin: 25px 20px;
 }
 
-#experience{
-    transition: transform .3s;
-    height: 250px;
-    width: 250px;
-    border-radius: 50px;
+.projects{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 15rem 0;
 }
 
-#experience:hover{
-    transform:scale(1.1);
+.projects-items{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2.5rem; 
 }
 
-#interest{
-    transition: transform .3s;
-    height: 250px;
-    width: 250px;
-    border-radius: 50px;
+.project-card{
+    position: relative;
+    height: 18rem;
+    width: 100%;
+    border-radius: 10px;
+    overflow: hidden;
 }
 
-#interest:hover{
-    transform:scale(1.1);
+.project-card img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 3.5rem;
 }
 
-
-#first{
-    font-size: 1.5rem;
-    margin-top: 120px;
+.card-overlay{
+    background: rgba(0, 0, 0, 0.8);
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    cursor: pointer;
 }
 
-#second{
-    font-size: 1.5rem;
-    margin-top: 120px;
+.card-overlay:hover{
+    background: rgba(0, 0, 0, 0);
+    color: #000;
+    transition: 0.4s all linear;
 }
 
-#third{
-    font-size: 1.5rem;
-    margin-top: 120px;
+.card-overlay .bx{
+    color: #fff;
+    font-size: 1.8rem;
+    padding: 1.1rem;
+    background: rgba(0, 0, 0, 0.8);
+    border-radius: 0.8rem;
+    transition: 1s all cubic-bezier(0.075, 0.82, 0.165, 1);
 }
 
-#fourth{
-    font-size: 1.5rem;
-    margin-top: 120px;
+.card-overlay .bx:hover{
+    transform: scale(1.2);
+    color: aqua;
+    background: #000;
+    box-shadow: 0 0 2rem aqua;
 }
 
 
 /* ====SKILLS CSS==== */
-.resume-section {
+.skills{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 10rem 0;
+}
+
+.skills-items{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 3.5rem;
+}
+
+.skill-card{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    cursor: pointer;
+    transition: 1s all cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.skill-card:hover{
+    border-radius: 1rem solid;
+    transform: scale(1.05);
+}
+
+.skill-card .bx{
+    font-size: 8rem;
+    transform: 0.4s ease;
+}
+
+.skill-card .bx:hover{
+    color: aqua;
+}
+
+.skill-card h3{
+    font-size: 2.5rem;
+    font-weight: 200;
+}
+
+.skill-card p{
     text-align: center;
-    font-size: 2.0rem;
-    color: #7e7e7e;
-    font-family: "Poppins", sans-serif;
-    height: 100vh;
-}
-.list-inline {
-    list-style: none;
-}
-  
-.list-icons {
-    font-size: 3.2rem;
-}
-  
-#skill-bars {
-    width: 50%;
-    margin: 0 auto;
-}
-  
-.progress{
-    background-image: linear-gradient(
-      to left,
-      #fdfeff,
-      #29b5f6,
-      #104566,
-      #0b3a5f,
-      #010101
-    );
+    font-size: 1.3rem;
+    opacity: 0.5;
 }
 
-.list-inline-item i:hover {
-    color: #5fb4e8;
-    transition: all 0.2s ease-in-out;
-}
-
-.blue{
+.skills_title{
+    text-align: center;
     color: rgb(250, 250, 250);
-    transition: all 0.2s ease-in-out;
-    margin: 35px 20px;
+    font-size: 3rem;
+    font-family: "Poppins", sans-serif;
+    margin: 25px 20px;
 }
-
-.list-inline-item{
-    display: inline-block;
-    margin: 10px 27px;
-}
-
 
 /* ====THIRD SECTION CSS==== */
+.aboutMeSection{
+    margin: 10rem 0;
+}
 .aboutMetitle{
     text-align: center;
     font-size: 3.0rem;
@@ -373,16 +382,16 @@ nav ul li a:hover{
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 75vh;
 }
 
 #aboutMeimg{
     width: 350px;
     height: 350px;
     border: 5px solid rgb(239, 239, 247);
-    border-radius: 105px;
     margin: 20px 40px;
     backdrop-filter: blur(12px);
+    border-radius: 60%;
+    animation: float 5s ease-in-out infinite;
 }
 
 .aboutMeleftSection{
@@ -398,18 +407,32 @@ nav ul li a:hover{
 }
 
 .aboutMeReadMore{
-    padding: 7px;
-    background:rgb(170, 107, 228);
-    color: white;
+    padding: 10px;
+    background:aqua;
+    color: #000;
     border: 4px solid white;
-    border-radius: 6px;
-    font-size: 1.0rem;
+    border-radius: 8rem;
+    font-size: 1.3rem;
+    transition: 0.5s ease;
     cursor: pointer;
     font-weight: bold;
     font-family: 'Poppins', sans-serif;
     margin-top: 27px;
 }
 
+.aboutMeReadMore:hover{
+    color: aqua;
+    background: #000;
+    box-shadow: 0 0 1rem aqua;
+}
+
+.aboutMeReadMore a{
+    color: #000;
+}
+
+.aboutMeReadMore a:hover{
+    color: aqua;
+}
 
 /* ====FOOTER CSS==== */
 footer{
@@ -422,7 +445,7 @@ footer{
 }
 
 .footer_name{
-    font-size: 1.6rem;
+    font-size: 1.9rem;
     font-weight: 400;
     margin-top: 46px;
     margin-left: 35px;
@@ -431,6 +454,10 @@ footer{
 .footer_name a{
     text-decoration: none;
     color: rgb(250, 250, 250);
+}
+
+.footer_name a:hover{
+    color: aqua;
 }
 
 .data{
@@ -459,7 +486,7 @@ footer{
     color: rgb(250, 250, 250);
     font-size: 1.02rem;
     text-decoration: none; 
-    border-bottom:2.5px solid red;
+    border-bottom:2.5px solid aqua;
 }
 
 .handles{
@@ -469,50 +496,206 @@ footer{
 
 .handles a{
     text-decoration: none;
+    
 }
 
 #github{
     display: flex;
     justify-content: space-around;
-    width: 30px;
-    height: 30px;
+    width: 2.0rem;
+    height: 2.0rem;
     margin: 45px 5px;
     color: rgb(250, 250, 250);
     font-size: 2.0rem;
+    transform: 0.4s ease;
+    border-radius: 50%;
 }
 
+#github:hover{
+    color: aqua;
+    box-shadow: 0 0 1rem aqua;
+}
 
 #instagram{
     display: flex;
     justify-content: space-around;
-    width: 30px;
-    height: 30px;
+    width: 2.0rem;
+    height: 2.0rem;
     margin: 45px 5px;
     color: rgb(250, 250, 250);
     font-size: 2.0rem;
+    transform: 0.4s ease;
+    border-radius: 50%;
+}
+
+#instagram:hover{
+    color: aqua;
+    box-shadow: 0 0 1rem aqua;
 }
 
 #whatsapp{
     display: flex;
     justify-content: space-around;
-    width: 30px;
-    height: 30px;
+    width: 2.0rem;
+    height: 2.0rem;
     margin: 45px 5px;
     color: rgb(250, 250, 250);
     font-size: 2.0rem;
+    transform: 0.4s ease;
+    border-radius: 50%;
+}
+
+#whatsapp:hover{
+    color: aqua;
+    box-shadow: 0 0 1rem aqua;
 }
 
 #linkedin{
     display: flex;
     justify-content: space-around;
-    width: 30px;
-    height: 30px;
+    width: 2.0rem;
+    height: 2.0rem;
     margin: 45px 5px;
     color: rgb(250, 250, 250);
     font-size: 2.0rem;
+    transform: 0.4s ease;
+    border-radius: 50%;
+}
+
+#linkedin:hover{
+    color: aqua;
+    box-shadow: 0 0 1rem aqua;
 }
 
 .footer-rights{
     display: flex;
     justify-content: space-around;
+}
+
+
+/* Media Queries */
+@media(max-width:1200px){
+    html{
+        font-size: 80%;
+    }
+}
+
+@media(max-width:992px){
+    #aboutMeimg{
+        width: 30vw;
+        height: 30vw;
+    }
+
+    .project-card{
+        height: 14rem;
+    }
+
+    .skill-card .bx{
+        font-size: 4rem;
+    }
+
+}
+
+@media(max-width:767px){
+    .skills-items{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .skill-card[value="cplus"]{
+        display: none;
+    }
+
+    .projects-items{
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    #aboutMe{
+        flex-direction: column;
+    }
+
+    #aboutMeimg{
+        width: 30vw;
+        height: 30vw;
+        margin: 3rem 0;
+    }
+
+    #content{
+        flex-direction: column;
+        width: 80%;
+        word-wrap: break-word;
+    }
+
+    .skills_title, .secondSectiontitle, .aboutMetitle{
+        font-size: 2.7rem;
+    }
+
+    #aboutMeReadMore{
+        margin: 1rem 14rem;
+    }
+    
+    .data{
+        display: none;
+    }
+    
+    .footer_name{
+        font-size: 1rem;
+    }
+    
+    #image_1{
+        width: 50vw;
+        height: 50vw;
+    }
+
+    .rightSection{
+        justify-content: center;
+    }
+}
+
+@media(max-width:620px){
+    .data{
+        display: none;
+    }
+
+    .footer_name{
+        font-size: 1.2rem;
+    }
+    .skills-items{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    
+    .skill-card[value="cplus"]{
+        display: none;
+    }
+
+    .leftSection{
+        font-size: 1.5rem;
+    }
+
+    #image_1{
+        width: 60vw;
+        height: 60vw;
+    }
+
+    .aboutMeReadMore{
+        border-radius: 1rem;
+    }
+}
+
+@media(max-width:450px){
+    .data{
+        display: none;
+    }
+
+    .footer_name{
+        font-size: 1.2rem;
+    }
+
+    .aboutMeReadMore{
+        border-radius: 1rem;
+    }
+
+    #image_1{
+        width: 80vw;
+        height: 80vw;
+    }
 }
