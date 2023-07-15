@@ -1,6 +1,10 @@
 *{
     margin: 0;
     padding: 0;
+    outline: none;
+    text-decoration: none;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 
 body{
@@ -349,4 +353,82 @@ footer{
 .footer-rights{
     display: flex;
     justify-content: space-around;
+}
+
+@media(max-width:1200px){
+    html{
+        font-size: 80%;
+    }
+}
+
+@media(max-width:992px){
+    .firstSection{
+        font-size: 3rem;
+    }
+    #element{
+        font-size: 3rem;
+    }
+
+    .contact_section{
+        font-size: 2.2rem;
+    }
+
+    .form, .btn{
+        font-size: 1.3rem;
+    }
+    
+}
+@media(max-width:767px){
+    .firstSection{
+        font-size: 2.2rem;
+    }
+    #element{
+        font-size: 2.2rem;
+    }
+
+    .contact_section{
+        font-size: 1.9rem;
+    }
+
+    .form, .btn{
+        font-size: 1.2rem;
+    }
+}
+@media(max-width:620px){
+    .data{
+        display: none;
+    }
+
+    .footer_name{
+        font-size: 1.2rem;
+    }
+
+    .form, .btn{
+        font-size: 1.1rem;
+    }
+    
+}
+@media(max-width:450px){
+    .data{
+        display: none;
+    }
+
+    .footer_name{
+        font-size: 1.2rem;
+    }
+
+    .firstSection{
+        font-size: 1.5rem;
+    }
+    #element{
+        font-size: 1.5rem;
+    }
+
+    .contact_section{
+        font-size: 1.6rem;
+    }
+
+    .form, .btn{
+        font-size: 1rem;
+    }
 }

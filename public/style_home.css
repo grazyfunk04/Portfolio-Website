@@ -1,6 +1,10 @@
 *{
     margin: 0;
     padding: 0;
+    outline: none;
+    text-decoration: none;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 
 body{
@@ -40,17 +44,21 @@ nav ul li a:hover{
     color: rgb(250, 250, 250);
     font-size: 1.02rem;
     text-decoration: none; 
-    border-bottom:2.5px solid red;
+    border-bottom:2.5px solid aqua;
 }
 
 .left{
-    font-size: 1.6rem;
+    font-size: 1.9rem;
     font-weight: bold;
 }
 
 .left a{
     text-decoration: none !important;
     color: rgb(250, 250, 250);
+}
+
+.left a:hover{
+    color: aqua;
 }
 
 .toggle_btn{
@@ -74,7 +82,7 @@ nav ul li a:hover{
     color: rgb(239, 239, 247);
     font-size: 1.02rem;
     text-decoration: none; 
-    border-bottom:2.5px solid red;
+    border-bottom:2.5px solid aqua;
 }
 
 .dropdown_menu{
@@ -124,6 +132,191 @@ nav ul li a:hover{
     }
 }
 
+.purple{
+    color: aqua
+}
+
+/* ====FIRST SECTION CSS==== */
+#element{
+    color: aqua;
+    font-size: 4rem;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    
+}
+
+.firstSection{
+    font-size: 4rem;
+    font-weight: bold;
+    margin: 40px 0;
+}
+
+.firstSection > div{
+    display: flex;
+    justify-content: center;
+    height: 15vh;
+}
+
+.typed_cursor{
+    opacity: 1;
+}
+
+.typed_cursor.typed_cursor--blink{
+    animation: typedjsBlink 0.8s infinite;
+    -webkit-animation: typedjsBlink 0.8s infinite;
+            animation: typedjsBlink 0.8s infinite;
+}
+
+/* ====SECOND SECTION CSS==== */
+#profile_pic{
+    backdrop-filter: blur(12px);
+    border-radius: 60%;
+    animation: float 5s ease-in-out infinite;
+    border: 5px solid white;
+    width: 300px;
+    height: 300px;
+    animation: float 5s ease-in-out infinite;
+}
+
+@keyframes float{
+    0%{
+        transform: translateY(0);
+    }
+    50%{
+        transform: translateY(-2.5rem);
+    }
+    100%{
+        transform: translateY(0);
+    }
+}
+
+.home_section{
+    text-align: center;
+    color: rgb(250, 250, 250);
+    font-size: 3.5rem;
+    font-family: "Poppins", sans-serif;
+    margin: 10px 0;
+}
+
+.secondSection{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 6.2rem 0;
+}
+
+.rightSection > div{
+    font-size: 4rem;
+    font-weight: bold;
+    font-family: 'Poppins', sans-serif;
+}
+
+.thirdSection{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    text-align: center;
+    word-wrap: break-word;
+    row-gap: 2rem;
+    width: 100%;
+}
+
+.communication{
+    margin: 3rem 0;
+}
+.project_management{
+    margin: 3rem 0;
+}
+.technical_proeficiency{
+    margin: 3rem 0;
+}
+.problem_solving{
+    margin: 3rem 0;
+}
+.leadership{
+    margin: 3rem 0;
+}
+.adaptability{
+    margin: 3rem 0;
+}
+.time_management{
+    margin: 3rem 0;
+}
+.multilingual{
+    margin: 3rem 0;
+}
+
+.thirdSection p{
+    font-size: 1.2rem;
+    font-weight: bold;
+    font-family: 'Poppins', sans-serif;
+}
+
+.thirdSection h1{
+    font-size: 2.4rem;
+    font-weight: bold;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* ====SKILLS SECTION==== */
+
+.skills{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 10rem 0;
+}
+
+.skills-items{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 3.5rem;
+}
+
+.skill-card{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    cursor: pointer;
+    transition: 1s all cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.skill-card:hover{
+    border-radius: 1rem solid;
+    transform: scale(1.05);
+}
+
+.skill-card .bx{
+    font-size: 8rem;
+    transform: 0.4s ease;
+}
+
+.skill-card .bx:hover{
+    color: aqua;
+}
+
+.skill-card h3{
+    font-size: 2.5rem;
+    font-weight: 200;
+}
+
+.skill-card p{
+    text-align: center;
+    font-size: 1.3rem;
+    opacity: 0.5;
+}
+
+.skills_title{
+    text-align: center;
+    color: rgb(250, 250, 250);
+    font-size: 3rem;
+    font-family: "Poppins", sans-serif;
+    margin: 25px 20px;
+}
 
 
 /* ====FOOTER CSS==== */
@@ -137,7 +330,7 @@ footer{
 }
 
 .footer_name{
-    font-size: 1.6rem;
+    font-size: 1.9rem;
     font-weight: 400;
     margin-top: 46px;
     margin-left: 35px;
@@ -146,6 +339,10 @@ footer{
 .footer_name a{
     text-decoration: none;
     color: rgb(250, 250, 250);
+}
+
+.footer_name a:hover{
+    color: aqua;
 }
 
 .data{
@@ -174,7 +371,7 @@ footer{
     color: rgb(250, 250, 250);
     font-size: 1.02rem;
     text-decoration: none; 
-    border-bottom:2.5px solid red;
+    border-bottom:2.5px solid aqua;
 }
 
 .handles{
@@ -184,50 +381,232 @@ footer{
 
 .handles a{
     text-decoration: none;
+    
 }
 
 #github{
     display: flex;
     justify-content: space-around;
-    width: 30px;
-    height: 30px;
+    width: 2.0rem;
+    height: 2.0rem;
     margin: 45px 5px;
     color: rgb(250, 250, 250);
     font-size: 2.0rem;
+    transform: 0.4s ease;
+    border-radius: 50%;
 }
 
+#github:hover{
+    color: aqua;
+    box-shadow: 0 0 1rem aqua;
+}
 
 #instagram{
     display: flex;
     justify-content: space-around;
-    width: 30px;
-    height: 30px;
+    width: 2.0rem;
+    height: 2.0rem;
     margin: 45px 5px;
     color: rgb(250, 250, 250);
     font-size: 2.0rem;
+    transform: 0.4s ease;
+    border-radius: 50%;
+}
+
+#instagram:hover{
+    color: aqua;
+    box-shadow: 0 0 1rem aqua;
 }
 
 #whatsapp{
     display: flex;
     justify-content: space-around;
-    width: 30px;
-    height: 30px;
+    width: 2.0rem;
+    height: 2.0rem;
     margin: 45px 5px;
     color: rgb(250, 250, 250);
     font-size: 2.0rem;
+    transform: 0.4s ease;
+    border-radius: 50%;
+}
+
+#whatsapp:hover{
+    color: aqua;
+    box-shadow: 0 0 1rem aqua;
 }
 
 #linkedin{
     display: flex;
     justify-content: space-around;
-    width: 30px;
-    height: 30px;
+    width: 2.0rem;
+    height: 2.0rem;
     margin: 45px 5px;
     color: rgb(250, 250, 250);
     font-size: 2.0rem;
+    transform: 0.4s ease;
+    border-radius: 50%;
+}
+
+#linkedin:hover{
+    color: aqua;
+    box-shadow: 0 0 1rem aqua;
 }
 
 .footer-rights{
     display: flex;
     justify-content: space-around;
+}
+
+@media(max-width:1200px){
+    html{
+        font-size: 80%;
+    }
+
+    .secondSection{
+        flex-direction: column;
+    }
+}
+
+@media(max-width:992px){
+    .firstSection{
+        font-size: 3rem;
+    }
+    #element{
+        font-size: 3rem;
+    }
+
+    .home_section{
+        font-size: 2.2rem;
+    }
+
+    #profile_pic{
+        width: 30vw;
+        height: 30vw;
+    }
+
+    .rightSection > div{
+        font-size: 3rem;
+    }
+
+    .communication h1, .project_management h1, .technical_proeficiency h1
+    , .problem_solving h1, .leadership h1, .adaptability h1,
+    .time_management h1, .multilingual h1{
+        font-size: 2rem;
+    }
+
+    .communication p, .project_management p, .technical_proeficiency p
+    , .problem_solving p, .leadership p, .adaptability p,
+    .time_management p, .multilingual p{
+        font-size: 1.1rem;
+    }
+
+    .skill-card .bx{
+        font-size: 4rem;
+    }
+}
+@media(max-width:767px){
+    .firstSection{
+        font-size: 2.2rem;
+    }
+    #element{
+        font-size: 2.2rem;
+    }
+
+    .home_section{
+        font-size: 1.9rem;
+    }
+
+    .rightSection > div{
+        font-size: 2rem;
+    }
+
+    .communication h1, .project_management h1, .technical_proeficiency h1
+    , .problem_solving h1, .leadership h1, .adaptability h1,
+    .time_management h1, .multilingual h1{
+        font-size: 1.7rem;
+    }
+
+    .communication p, .project_management p, .technical_proeficiency p
+    , .problem_solving p, .leadership p, .adaptability p,
+    .time_management p, .multilingual p{
+        font-size: 0.9rem;
+    }
+    
+    .skills-items{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .skill-card[value="cplus"]{
+        display: none;
+    }
+
+    .skills_title{
+        font-size: 2.7rem;
+    }
+}
+@media(max-width:620px){
+    .data{
+        display: none;
+    }
+
+    .footer_name{
+        font-size: 1.2rem;
+    }
+
+    .communication h1, .project_management h1, .technical_proeficiency h1
+    , .problem_solving h1, .leadership h1, .adaptability h1,
+    .time_management h1, .multilingual h1{
+        font-size: 1.5rem;
+    }
+
+    .communication p, .project_management p, .technical_proeficiency p
+    , .problem_solving p, .leadership p, .adaptability p,
+    .time_management p, .multilingual p{
+        font-size: 0.8rem;
+    }
+
+    .skills-items{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    
+    .skill-card[value="cplus"]{
+        display: none;
+    }
+    
+}
+@media(max-width:450px){
+    .data{
+        display: none;
+    }
+
+    .footer_name{
+        font-size: 1.2rem;
+    }
+
+    .firstSection{
+        font-size: 1.5rem;
+    }
+    #element{
+        font-size: 1.5rem;
+    }
+
+    .home_section{
+        font-size: 1.6rem;
+    }
+
+    .rightSection > div{
+        font-size: 1rem;
+    }
+    
+    .communication h1, .project_management h1, .technical_proeficiency h1
+    , .problem_solving h1, .leadership h1, .adaptability h1,
+    .time_management h1, .multilingual h1{
+        font-size: 1.2rem;
+    }
+
+    .communication p, .project_management p, .technical_proeficiency p
+    , .problem_solving p, .leadership p, .adaptability p,
+    .time_management p, .multilingual p{
+        font-size: 0.6rem;
+    }
 }

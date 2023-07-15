@@ -1,6 +1,10 @@
 *{
     margin: 0;
     padding: 0;
+    outline: none;
+    text-decoration: none;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 
 body{
@@ -170,6 +174,7 @@ nav ul li a:hover{
     font-size: 3.4rem;
     font-family: "Poppins", sans-serif;
 }
+
 
 .secondSection a{
     text-decoration: none;
@@ -475,4 +480,124 @@ footer{
 .footer-rights{
     display: flex;
     justify-content: space-around;
+}
+
+@media(max-width:1200px){
+    html{
+        font-size: 80%;
+    }
+}
+
+@media(max-width:992px){
+    .firstSection{
+        font-size: 3rem;
+    }
+    #element{
+        font-size: 3rem;
+    }
+
+    .projects_section{
+        font-size: 2.2rem;
+    }
+
+    .portfolioWebsite, .todoApp, .portfolioApp, .ai,
+    .zomatoClone, .flappyBird{
+        flex-direction: column;
+        font-size: 1.2rem;
+        text-align: center;
+        justify-content: center;
+    }
+
+    .h3{
+        font-size: 1.8rem;
+    }
+    #website, #todoApp, #app, #aiJarvis, #zomatoClone, 
+    #flappyBirdGame{
+        width: 30vw;
+        height: 30vw;
+        margin: 0 43px
+    }
+
+    
+}
+@media(max-width:767px){
+    .firstSection{
+        font-size: 2.2rem;
+    }
+    #element{
+        font-size: 2.2rem;
+    }
+
+    .projects_section{
+        font-size: 1.9rem;
+    }
+
+    
+}
+@media(max-width:620px){
+    .data{
+        display: none;
+    }
+
+    .footer_name{
+        font-size: 1.2rem;
+    }
+
+    .portfolioWebsite, .todoApp, .portfolioApp, .ai,
+    .zomatoClone, .flappyBird{
+        flex-direction: column;
+        font-size: 0.9rem;
+        text-align: center;
+        justify-content: center;
+    }
+
+    .h3{
+        font-size: 1.5rem;
+    }
+    #website, #todoApp, #app, #aiJarvis, #zomatoClone, 
+    #flappyBirdGame{
+        width: 30vw;
+        height: 30vw;
+        margin: 0 43px
+    }
+
+}
+@media(max-width:450px){
+    .data{
+        display: none;
+    }
+
+    .footer_name{
+        font-size: 1.2rem;
+    }
+
+    .firstSection{
+        font-size: 1.5rem;
+    }
+    #element{
+        font-size: 1.5rem;
+    }
+
+    .projects_section{
+        font-size: 1.6rem;
+    }
+
+    .portfolioWebsite, .todoApp, .portfolioApp, .ai,
+    .zomatoClone, .flappyBird{
+        flex-direction: column;
+        font-size: 0.6rem;
+        text-align: center;
+        justify-content: center;
+    }
+
+    .h3{
+        font-size: 1.1rem;
+    }
+    #website, #todoApp, #app, #aiJarvis, #zomatoClone, 
+    #flappyBirdGame{
+        width: 30vw;
+        height: 30vw;
+        margin: 0 43px
+    }
+
 }

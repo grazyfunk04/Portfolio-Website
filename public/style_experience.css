@@ -1,0 +1,490 @@
+*{
+    margin: 0;
+    padding: 0;
+    outline: none;
+    text-decoration: none;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body{
+    background-color: rgb(11, 12, 12);
+    color: rgb(239, 239, 247);
+    font-family: 'Poppins', sans-serif;
+    height: 100vh;
+}
+
+/* ====NAVBAR CSS==== */
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 80px;
+    background-color: rgb(11, 12, 12);
+    width: 100%;
+    margin: 0 auto;
+}
+
+nav ul{
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li{
+    list-style: none;
+    margin: 0 20px;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: rgb(250, 250, 250);
+}
+
+nav ul li a:hover{
+    color: rgb(250, 250, 250);
+    font-size: 1.02rem;
+    text-decoration: none; 
+    border-bottom:2.5px solid aqua;
+}
+
+.left{
+    font-size: 1.9rem;
+    font-weight: bold;
+}
+
+.left a{
+    text-decoration: none !important;
+    color: rgb(250, 250, 250);
+}
+
+.left a:hover{
+    color: aqua;
+}
+
+.toggle_btn{
+    color: #fff;
+    font-size: 1.2rem;
+    cursor: pointer;
+    display: none;
+}
+
+.dropdown_menu li{
+    list-style: none;
+    margin: 0 20px;
+}
+
+.dropdown_menu li a{
+    text-decoration: none;
+    color: rgb(239, 239, 247)
+}
+
+.dropdown_menu li a:hover{
+    color: rgb(239, 239, 247);
+    font-size: 1.02rem;
+    text-decoration: none; 
+    border-bottom:2.5px solid aqua;
+}
+
+.dropdown_menu{
+    display: none;
+    position: absolute;
+    right: 2rem;
+    top: 60px;
+    width: 300px;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(12px);
+    border-radius: 10px;
+    overflow: hidden;
+    height: 0;
+    transition: height 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.dropdown_menu li{
+    padding: 0.6rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.dropdown_menu.open{
+    height: 180px;
+}
+
+@media(max-width: 1092px){
+    .right .links{
+        display: none;
+    }
+
+    .toggle_btn{
+        display: block;
+        margin-right: 20px;
+    }
+
+    .dropdown_menu{
+        display: block;
+    }
+}
+
+@media(max-width: 576px){
+    .dropdown_menu{
+        left: 2rem;
+        width: unset;
+    }
+}
+
+.purple{
+    color: aqua
+}
+
+/* ====FIRST SECTION CSS==== */
+#element{
+    color: aqua;
+    font-size: 4rem;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    
+}
+
+.firstSection{
+    font-size: 4rem;
+    font-weight: bold;
+    margin: 40px 0;
+}
+
+.firstSection > div{
+    display: flex;
+    justify-content: center;
+    height: 15vh;
+}
+
+.typed_cursor{
+    opacity: 1;
+}
+
+.typed_cursor.typed_cursor--blink{
+    animation: typedjsBlink 0.8s infinite;
+    -webkit-animation: typedjsBlink 0.8s infinite;
+            animation: typedjsBlink 0.8s infinite;
+}
+
+.purple{
+    color: aqua;
+}
+
+/* ====SECOND SECTION==== */
+.experience{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 3rem;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+}
+
+.technical_experience{
+    text-align: center;
+    color: rgb(250, 250, 250);
+    font-size: 4rem;
+    font-family: "Poppins", sans-serif;
+    margin: 10px 0;
+}
+
+.UI_UX{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.3rem;
+    margin: 2rem 0;
+}
+
+.nodejs{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.3rem;
+    margin: 2rem 0;
+}
+
+.btn{
+    padding: 4px 30px;
+    background: aqua;
+    color: #000;
+    border: 4px solid white;
+    cursor: pointer;
+    font-weight: bold;
+    font-family: 'Poppins', sans-serif;
+    border-radius: 2rem;
+    font-size: 1.6rem;
+    transition: 0.5s ease;
+    margin: 1rem 0;
+}
+
+.btn:hover{
+    color: aqua;
+    background: #000;
+    box-shadow: 0 0 1.2rem aqua;
+}
+
+.volunteer_experience{
+    text-align: center;
+    color: rgb(250, 250, 250);
+    font-size: 4rem;
+    font-family: "Poppins", sans-serif;
+    margin: 10px 0;
+}
+
+.confluence{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+    margin: 6rem 0;
+}
+
+.MAD{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+    margin: 6rem 0;
+}
+
+/* ====FOOTER CSS==== */
+footer{
+    background-color: rgb(11, 12, 12);
+    height: 150px;
+}
+.footer{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.footer_name{
+    font-size: 1.9rem;
+    font-weight: 400;
+    margin-top: 46px;
+    margin-left: 35px;
+}   
+
+.footer_name a{
+    text-decoration: none;
+    color: rgb(250, 250, 250);
+}
+
+.footer_name a:hover{
+    color: aqua;
+}
+
+.data{
+    display: flex;
+    justify-content: space-around;
+    margin: 10px 10px;
+}
+
+.data ul{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+}
+
+.data ul li{
+    list-style: none;
+    padding: 1.3px 0;
+}
+
+.data ul li a{
+    text-decoration: none;
+    color: rgb(250, 250, 250);
+}
+
+.data ul li a:hover{
+    color: rgb(250, 250, 250);
+    font-size: 1.02rem;
+    text-decoration: none; 
+    border-bottom:2.5px solid aqua;
+}
+
+.handles{
+    display: flex;
+    justify-content: space-around;
+}
+
+.handles a{
+    text-decoration: none;
+    
+}
+
+#github{
+    display: flex;
+    justify-content: space-around;
+    width: 2.0rem;
+    height: 2.0rem;
+    margin: 45px 5px;
+    color: rgb(250, 250, 250);
+    font-size: 2.0rem;
+    transform: 0.4s ease;
+    border-radius: 50%;
+}
+
+#github:hover{
+    color: aqua;
+    box-shadow: 0 0 1rem aqua;
+}
+
+#instagram{
+    display: flex;
+    justify-content: space-around;
+    width: 2.0rem;
+    height: 2.0rem;
+    margin: 45px 5px;
+    color: rgb(250, 250, 250);
+    font-size: 2.0rem;
+    transform: 0.4s ease;
+    border-radius: 50%;
+}
+
+#instagram:hover{
+    color: aqua;
+    box-shadow: 0 0 1rem aqua;
+}
+
+#whatsapp{
+    display: flex;
+    justify-content: space-around;
+    width: 2.0rem;
+    height: 2.0rem;
+    margin: 45px 5px;
+    color: rgb(250, 250, 250);
+    font-size: 2.0rem;
+    transform: 0.4s ease;
+    border-radius: 50%;
+}
+
+#whatsapp:hover{
+    color: aqua;
+    box-shadow: 0 0 1rem aqua;
+}
+
+#linkedin{
+    display: flex;
+    justify-content: space-around;
+    width: 2.0rem;
+    height: 2.0rem;
+    margin: 45px 5px;
+    color: rgb(250, 250, 250);
+    font-size: 2.0rem;
+    transform: 0.4s ease;
+    border-radius: 50%;
+}
+
+#linkedin:hover{
+    color: aqua;
+    box-shadow: 0 0 1rem aqua;
+}
+
+.footer-rights{
+    display: flex;
+    justify-content: space-around;
+}
+
+@media(max-width:1200px){
+    html{
+        font-size: 80%;
+    }
+}
+
+@media(max-width:992px){
+    .firstSection{
+        font-size: 3rem;
+    }
+    #element{
+        font-size: 3rem;
+    }
+
+    .technical_experience{
+        font-size: 2.2rem;
+    }
+
+    .volunteer_experience{
+        font-size: 2.2rem;
+    }
+
+    .confluence, .MAD, .UI_UX, .nodejs{
+        font-size: 1.4rem;
+    }
+
+    .btn{
+        font-size: 1.4rem;
+    }
+}
+@media(max-width:767px){
+    .firstSection{
+        font-size: 2.2rem;
+    }
+    #element{
+        font-size: 2.2rem;
+    }
+
+    .technical_experience{
+        font-size: 1.9rem;
+    }
+
+    .volunteer_experience{
+        font-size: 1.9rem;
+    }
+
+    .confluence, .MAD, .UI_UX, .nodejs{
+        font-size: 1.1rem;
+    }
+
+    .btn{
+        font-size: 1.2rem;
+    }
+}
+@media(max-width:620px){
+    .data{
+        display: none;
+    }
+
+    .footer_name{
+        font-size: 1.2rem;
+    }
+
+    
+}
+@media(max-width:450px){
+    .data{
+        display: none;
+    }
+
+    .footer_name{
+        font-size: 1.2rem;
+    }
+
+    .firstSection{
+        font-size: 1.5rem;
+    }
+    #element{
+        font-size: 1.5rem;
+    }
+
+    .technical_experience{
+        font-size: 1.6rem;
+    }
+
+    .volunteer_experience{
+        font-size: 1.6  rem;
+    }
+
+    .confluence, .MAD, .UI_UX, .nodejs{
+        font-size: 0.8rem;
+    }
+    
+    .btn{
+        font-size: 0.8rem;
+    }
+}
