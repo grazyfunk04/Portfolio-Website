@@ -199,7 +199,7 @@ nav ul li a:hover{
     border: 8px solid white;
     margin-bottom: 30px;
     border-radius: 30%;
-    animation: float 5s ease-in-out infinite;
+    /* animation: float 5s ease-in-out infinite; */
 }
 
 @keyframes float{

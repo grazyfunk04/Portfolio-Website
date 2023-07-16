@@ -175,7 +175,7 @@ nav ul li a:hover{
     border: 5px solid white;
     width: 300px;
     height: 300px;
-    animation: float 5s ease-in-out infinite;
+    /* animation: float 5s ease-in-out infinite; */
 }
 
 @keyframes float{
