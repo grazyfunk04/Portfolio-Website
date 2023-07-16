@@ -391,7 +391,7 @@ nav ul li a:hover{
     margin: 20px 40px;
     backdrop-filter: blur(12px);
     border-radius: 60%;
-    animation: float 5s ease-in-out infinite;
+    /* animation: float 5s ease-in-out infinite; */
 }
 
 .aboutMeleftSection{
