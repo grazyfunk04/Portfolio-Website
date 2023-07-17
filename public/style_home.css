@@ -6,13 +6,31 @@
     box-sizing: border-box;
     scroll-behavior: smooth;
 }
+:root{
+    --primary-color: #000;
+    --secondary-color: #fff;
+    --font-color: aqua;
+}
+
+.light-theme{
+    --primary-color: #fff;
+    --secondary-color: #000;
+    --font-color: rgb(235, 93, 235);
+}
 
 body{
-    background-color: rgb(11, 12, 12);
-    color: rgb(239, 239, 247);
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
     font-family: 'Poppins', sans-serif;
     height: 100vh;
 }
+
+
+#icon{
+    width: 25px;
+    cursor: pointer;
+}
+
 
 /* ====NAVBAR CSS==== */
 nav{
@@ -20,7 +38,7 @@ nav{
     justify-content: space-around;
     align-items: center;
     height: 80px;
-    background-color: rgb(11, 12, 12);
+    background-color: var(--primary-color);
     width: 100%;
     margin: 0 auto;
 }
@@ -37,14 +55,14 @@ nav ul li{
 
 nav ul li a{
     text-decoration: none;
-    color: rgb(250, 250, 250);
+    color: var(--secondary-color);
 }
 
 nav ul li a:hover{
-    color: rgb(250, 250, 250);
+    color: var(--secondary-color);
     font-size: 1.02rem;
     text-decoration: none; 
-    border-bottom:2.5px solid aqua;
+    border-bottom:3px solid var(--font-color);
 }
 
 .left{
@@ -54,15 +72,15 @@ nav ul li a:hover{
 
 .left a{
     text-decoration: none !important;
-    color: rgb(250, 250, 250);
+    color: var(--secondary-color);
 }
 
 .left a:hover{
-    color: aqua;
+    color: var(--font-color);
 }
 
 .toggle_btn{
-    color: #fff;
+    color: var(--secondary-color);
     font-size: 1.2rem;
     cursor: pointer;
     display: none;
@@ -75,14 +93,13 @@ nav ul li a:hover{
 
 .dropdown_menu li a{
     text-decoration: none;
-    color: rgb(239, 239, 247)
+    color: var(--secondary-color);
 }
-
 .dropdown_menu li a:hover{
-    color: rgb(239, 239, 247);
+    color: var(--secondary-color);
     font-size: 1.02rem;
     text-decoration: none; 
-    border-bottom:2.5px solid aqua;
+    border-bottom:3px solid var(--font-color);
 }
 
 .dropdown_menu{
@@ -133,12 +150,12 @@ nav ul li a:hover{
 }
 
 .purple{
-    color: aqua
+    color: var(--font-color)
 }
 
 /* ====FIRST SECTION CSS==== */
 #element{
-    color: aqua;
+    color: var(--font-color);
     font-size: 4rem;
     font-family: 'Poppins', sans-serif;
     font-weight: bold;
@@ -172,7 +189,7 @@ nav ul li a:hover{
     backdrop-filter: blur(12px);
     border-radius: 60%;
     animation: float 5s ease-in-out infinite;
-    border: 5px solid white;
+    border: 5px solid var(--secondary-color);
     width: 300px;
     height: 300px;
     /* animation: float 5s ease-in-out infinite; */
@@ -192,7 +209,7 @@ nav ul li a:hover{
 
 .home_section{
     text-align: center;
-    color: rgb(250, 250, 250);
+    color: var(--secondary-color);
     font-size: 3.5rem;
     font-family: "Poppins", sans-serif;
     margin: 10px 0;
@@ -296,7 +313,7 @@ nav ul li a:hover{
 }
 
 .skill-card .bx:hover{
-    color: aqua;
+    color: var(--font-color);
 }
 
 .skill-card h3{
@@ -312,7 +329,7 @@ nav ul li a:hover{
 
 .skills_title{
     text-align: center;
-    color: rgb(250, 250, 250);
+    color: var(--secondary-color);
     font-size: 3rem;
     font-family: "Poppins", sans-serif;
     margin: 25px 20px;
@@ -321,7 +338,7 @@ nav ul li a:hover{
 
 /* ====FOOTER CSS==== */
 footer{
-    background-color: rgb(11, 12, 12);
+    background-color: var(--primary-color);
     height: 150px;
 }
 .footer{
@@ -338,11 +355,11 @@ footer{
 
 .footer_name a{
     text-decoration: none;
-    color: rgb(250, 250, 250);
+    color: var(--secondary-color);
 }
 
 .footer_name a:hover{
-    color: aqua;
+    color: var(--font-color);
 }
 
 .data{
@@ -364,14 +381,14 @@ footer{
 
 .data ul li a{
     text-decoration: none;
-    color: rgb(250, 250, 250);
+    color: var(--secondary-color);
 }
 
 .data ul li a:hover{
-    color: rgb(250, 250, 250);
+    color: var(--secondary-color);
     font-size: 1.02rem;
     text-decoration: none; 
-    border-bottom:2.5px solid aqua;
+    border-bottom:3px solid var(--font-color);
 }
 
 .handles{
@@ -390,15 +407,15 @@ footer{
     width: 2.0rem;
     height: 2.0rem;
     margin: 45px 5px;
-    color: rgb(250, 250, 250);
+    color: var(--secondary-color);
     font-size: 2.0rem;
     transform: 0.4s ease;
     border-radius: 50%;
 }
 
 #github:hover{
-    color: aqua;
-    box-shadow: 0 0 1rem aqua;
+    color: var(--font-color);
+    box-shadow: 0 0 1rem var(--font-color);
 }
 
 #instagram{
@@ -407,15 +424,15 @@ footer{
     width: 2.0rem;
     height: 2.0rem;
     margin: 45px 5px;
-    color: rgb(250, 250, 250);
+    color: var(--secondary-color);
     font-size: 2.0rem;
     transform: 0.4s ease;
     border-radius: 50%;
 }
 
 #instagram:hover{
-    color: aqua;
-    box-shadow: 0 0 1rem aqua;
+    color: var(--font-color);
+    box-shadow: 0 0 1rem var(--font-color);
 }
 
 #whatsapp{
@@ -424,15 +441,15 @@ footer{
     width: 2.0rem;
     height: 2.0rem;
     margin: 45px 5px;
-    color: rgb(250, 250, 250);
+    color: var(--secondary-color);
     font-size: 2.0rem;
     transform: 0.4s ease;
     border-radius: 50%;
 }
 
 #whatsapp:hover{
-    color: aqua;
-    box-shadow: 0 0 1rem aqua;
+    color: var(--font-color);
+    box-shadow: 0 0 1rem var(--font-color);
 }
 
 #linkedin{
@@ -441,15 +458,15 @@ footer{
     width: 2.0rem;
     height: 2.0rem;
     margin: 45px 5px;
-    color: rgb(250, 250, 250);
+    color: var(--secondary-color);
     font-size: 2.0rem;
     transform: 0.4s ease;
     border-radius: 50%;
 }
 
 #linkedin:hover{
-    color: aqua;
-    box-shadow: 0 0 1rem aqua;
+    color: var(--font-color);
+    box-shadow: 0 0 1rem var(--font-color);
 }
 
 .footer-rights{

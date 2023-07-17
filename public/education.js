@@ -12,13 +12,16 @@ toggleBtn.onclick = function (){
 }
 
 var icon = document.getElementById("icon");
+var NIT_Logo = document.getElementById("NIT_Logo");
 
 icon.onclick = function(){
     document.body.classList.toggle("light-theme");
     if(document.body.classList.contains("light-theme")){
         icon.src = "../resources/moon.png";
+        NIT_Logo.src = "../resources/nitlogo2.png";
     }
     else{
         icon.src = "../resources/sun.png";
+        NIT_Logo.src = "../resources/nitlogo.png";
     }
 }
