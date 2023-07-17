@@ -27,6 +27,9 @@
                     <li><a href="#aboutMeSection">About</a></li>
                     <li><a href="./public/projects.html">Projects</a></li>
                     <li><a href="./public/contact_me.html">Contact Me</a></li>
+                    <li>
+                        <img src="./resources/sun.png" alt="sun" id="icon">
+                    </li>
                 </ul>
                 <div class="toggle_btn">
                     <i class="fa-solid fa-bars"></i>
@@ -40,28 +43,27 @@
             </div>
         </nav>
     </header>
-    <script src="logic.js"></script>
-
-        <section class="firstSection">
-            <div class="leftSection">
-                <div>Hi, My Name is <span class="purple">Kunal</span></div>
-                <div>and I am a passionate</div>
-                <span id="element"></span>
-                <div class="buttons">
-                    <a href="./resources/Resume.pdf" id="resume_visit" target="_blank" class="btn">Download Resume</a>
-                    <a href="https://github.com/grazyfunk04" id="github_visit" target="_blank" class="btn">Visit Github</a>
-                </div>
+    
+    <section class="firstSection">
+        <div class="leftSection">
+            <div>Hi, My Name is <span class="purple">Kunal</span></div>
+            <div>and I am a passionate</div>
+            <span id="element"></span>
+            <div class="buttons">
+                <a href="./resources/Resume.pdf" id="resume_visit" target="_blank" class="btn">Download Resume</a>
+                <a href="https://github.com/grazyfunk04" id="github_visit" target="_blank" class="btn">Visit Github</a>
             </div>
-            <div class="rightSection">
+        </div>
+        <div class="rightSection">
                 <img src="./resources/img1.png" alt="Personal Image" id="image_1">
             </div>
         </section>
 
         <section class="skills" id="skills">
               <h2 class="skills_title">&lt; My <span class="purple">Skills</span> &gt;</h2>
-            <div class="skills-items">
-                <div class="skill-card">
-                    <i class='bx bxl-html5' ></i>
+              <div class="skills-items">
+                  <div class="skill-card">
+                      <i class='bx bxl-html5' ></i>
                     <h3>HTML</h3>
                 </div>
     
@@ -70,22 +72,22 @@
                     <h3>CSS</h3>
                     
                 </div>
-    
+                
                 <div class="skill-card">
                     <i class='bx bxl-javascript' ></i>
                     <h3>JavaScript</h3>
                 </div>
-    
+                
                 <div class="skill-card">
                     <i class='bx bxl-nodejs' ></i>
                     <h3>Node Js</h3>
                 </div>
-    
+                
                 <div class="skill-card">
                     <i class='bx bxl-react' ></i>
                     <h3>React Js</h3>
                 </div>
-    
+                
                 <div class="skill-card">
                     <i class='bx bxl-android'></i>
                     <h3>Android</h3>
@@ -95,7 +97,7 @@
                     <i class='bx bxl-github' ></i>
                     <h3>Github</h3>
                 </div>
-
+                
                 <div class="skill-card">
                     <i class='bx bxl-python'></i>
                     <h3>Python</h3>
@@ -107,7 +109,7 @@
                 </div>
             </div>
         </section>
-
+        
         <section class="projects">
             <h2 class="secondSectiontitle">&lt; Quick <span class="purple">Links</span> &gt;</h2>
             <div class="projects-items">
@@ -119,7 +121,7 @@
                         </a>
                     </div>
                 </div>
-
+                
                 <div class="project-card">
                     <img src="./resources/projects.png" alt="projects">
                     <div class="card-overlay">
@@ -146,10 +148,10 @@
                         </a>
                     </div>
                 </div>
-
+                
             </div>
         </section>
-
+        
         <section class="aboutMeSection" id="aboutMeSection">
             <h2 class="aboutMetitle">&lt; Who I <span class="purple">am</span> &gt;</h2>
             <div id="aboutMe">
@@ -175,7 +177,7 @@
         }
         var typed = new Typed('#element', options);
     </script>
-
+    
     <footer>
         <div class="footer">
             <div class="footer_name">
@@ -199,7 +201,8 @@
             © Copyright | All rights reserved
         </div>
     </footer>
-
+    
     <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="logic.js"></script>
 </body>
 </html>
