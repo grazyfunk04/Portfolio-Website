@@ -13,25 +13,25 @@ toggleBtn.onclick = function (){
 
 ScrollReveal({
     reset: true,
-    distance: '100px',
+    distance: '0px',
     duration: 2000, 
     delay: 200,
 });
 
-ScrollReveal().reveal('.education_section', {origin: 'top'});
-ScrollReveal().reveal('.first, .second, .third', {origin: 'bottom'});
+// ScrollReveal().reveal('#personal_image, .profile_section', {origin: 'top'});
+// ScrollReveal().reveal('.name', {origin: 'bottom'});
+// ScrollReveal().reveal('.brief, .leetcode, .hackerrank, .github', {origin: 'left'});
+// ScrollReveal().reveal('.leftSection > ul, .geeksforgeeks, .codechef, .codeforces', {origin: 'right'});
+
 
 var icon = document.getElementById("icon");
-var NIT_Logo = document.getElementById("NIT_Logo");
 
 icon.onclick = function(){
     document.body.classList.toggle("light-theme");
     if(document.body.classList.contains("light-theme")){
         icon.src = "../resources/moon.png";
-        NIT_Logo.src = "../resources/nitlogo2.png";
     }
     else{
         icon.src = "../resources/sun.png";
-        NIT_Logo.src = "../resources/nitlogo.png";
     }
 }

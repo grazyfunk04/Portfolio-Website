@@ -18,20 +18,18 @@ ScrollReveal({
     delay: 200,
 });
 
-ScrollReveal().reveal('.education_section', {origin: 'top'});
-ScrollReveal().reveal('.first, .second, .third', {origin: 'bottom'});
+ScrollReveal().reveal('.projects_section', {origin: 'top'});
+ScrollReveal().reveal('.portfolioWebsite > a, .todoApp > a, .portfolioApp > a, .ai > a, .zomatoClone > a, .flappyBird > a', {origin: 'left'});
+ScrollReveal().reveal('.portfolioWebsite > ul, .todoApp > ul, .portfolioApp > ul, .ai > ul, .zomatoClone > ul, .flappyBird > ul', {origin: 'right'});
 
 var icon = document.getElementById("icon");
-var NIT_Logo = document.getElementById("NIT_Logo");
 
 icon.onclick = function(){
     document.body.classList.toggle("light-theme");
     if(document.body.classList.contains("light-theme")){
         icon.src = "../resources/moon.png";
-        NIT_Logo.src = "../resources/nitlogo2.png";
     }
     else{
         icon.src = "../resources/sun.png";
-        NIT_Logo.src = "../resources/nitlogo.png";
     }
 }

@@ -11,6 +11,13 @@ toggleBtn.onclick = function (){
      : 'fa-solid fa-bars'
 }
 
+ScrollReveal({
+    reset: true,
+    distance: '100px',
+    duration: 2000, 
+    delay: 200,
+});
+
 var icon = document.getElementById("icon");
 
 icon.onclick = function(){
