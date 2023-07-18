@@ -533,7 +533,7 @@ footer{
     box-shadow: 0 0 1rem var(--font-color);
 }
 
-#instagram{
+#twitter{
     display: flex;
     justify-content: space-around;
     width: 2.0rem;
@@ -545,7 +545,7 @@ footer{
     border-radius: 50%;
 }
 
-#instagram:hover{
+#twitter:hover{
     color: var(--font-color);
     box-shadow: 0 0 1rem var(--font-color);
 }

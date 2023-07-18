@@ -18,8 +18,10 @@ ScrollReveal({
     delay: 200,
 });
 
-ScrollReveal().reveal('#aboutMeimg', {origin: 'left'});
-ScrollReveal().reveal('.content', {origin: 'right'});
+ScrollReveal().reveal('#aboutMeimg, .leftSection', {origin: 'left'});
+ScrollReveal().reveal('.content, .rightSection', {origin: 'right'});
+ScrollReveal().reveal('.skills_title, .secondSectiontitle, .aboutMetitle', {origin: 'top'});
+ScrollReveal().reveal('.skills-items, .projects-items', {origin: 'bottom'});
 
 var icon = document.getElementById("icon");
 
