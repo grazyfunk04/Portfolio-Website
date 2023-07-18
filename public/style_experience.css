@@ -234,7 +234,7 @@ nav ul li a:hover{
 .btn{
     padding: 4px 30px;
     background: var(--font-color);
-    color: #000;
+    color: var(--primary-color);
     border: 4px solid var(--secondary-color);
     cursor: pointer;
     font-weight: bold;
@@ -247,7 +247,7 @@ nav ul li a:hover{
 
 .btn:hover{
     color: var(--font-color);
-    background: #000;
+    background: var(--primary-color);
     box-shadow: 0 0 1.2rem var(--font-color);
 }
 
