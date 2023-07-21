@@ -20,6 +20,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' 
     rel='stylesheet'>
+    <link rel="icon" href="../resources/icon-192.png">
 </head>
 <body>
     <header>
@@ -57,10 +58,10 @@
         <section class="contact" id="contact">
             <h2 class="contact_section">&lt; Contact <span class="purple">Me</span> &gt;</h2>
             
-            <form action="#" class="form">
-                <input type="text" placeholder="Your Name">
-                <input type="email" placeholder="Your Email">
-                <textarea name="" id="" cols="30" rows="6" placeholder="Your Message"></textarea>
+            <form class="form" onsubmit="sendEmail(); reset(); return false;">
+                <input type="text" placeholder="Your Name" id="name">
+                <input type="email" placeholder="Your Email" id="email">
+                <textarea name="" id="" cols="30" rows="6" placeholder="Your Message" id="message"></textarea>
                 <input type="submit" class="btn" value="Send Message">
             </form>
         </section>
@@ -102,6 +103,7 @@
     </footer>
     
     <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
     <script src="./contact_me.js"></script>
 </body>
 </html>
