@@ -16,12 +16,14 @@ html{
     --primary-color: #000;
     --secondary-color: #fff;
     --font-color: aqua;
+    --third-color:rgba(0, 0, 0, 0.8);
 }
 
 .light-theme{
     --primary-color: #fff;
     --secondary-color: #000;
     --font-color: rgb(235, 93, 235);
+    --third-color:rgba(255, 255, 255, 0.8);
 }
 
 body{
@@ -314,7 +316,7 @@ nav ul li a:hover{
     color: var(--secondary-color);
     font-size: 1.8rem;
     padding: 1.1rem;
-    background: rgba(0, 0, 0, 0.8);
+    background: var(--third-color);
     border-radius: 40%;
     transition: 1s all cubic-bezier(0.075, 0.82, 0.165, 1);
 }
