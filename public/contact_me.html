@@ -58,10 +58,10 @@
         <section class="contact" id="contact">
             <h2 class="contact_section">&lt; Contact <span class="purple">Me</span> &gt;</h2>
             
-            <form class="form" onsubmit="sendEmail(); reset(); return false;">
-                <input type="text" placeholder="Your Name" id="name">
-                <input type="email" placeholder="Your Email" id="email">
-                <textarea name="" id="" cols="30" rows="6" placeholder="Your Message" id="message"></textarea>
+            <form class="form" action="/public/contact_me.html" method="post">
+                <input type="text" placeholder="Your Name" id="name" name="name" required>
+                <input type="email" placeholder="Your Email" id="email" name="email" required>
+                <textarea cols="30" rows="6" placeholder="Your Message" id="message" name="message" required></textarea>
                 <input type="submit" class="btn" value="Send Message">
             </form>
         </section>
@@ -104,6 +104,24 @@
     
     <script src="https://unpkg.com/scrollreveal"></script>
     <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script>
+        function sendEmail(){
+            Email.send({
+                Host : "smtp.gmail.com",
+                Username : "kunalmehndi10@gmail.com",
+                Password : "CannizaroPERKIN@04",
+                To : 'kunalmehndi10@gmail.com',
+                From : document.getElementById("email").value,
+                Subject : "New Contact Form",
+                Body : "Name: " + document.getElementById("name").value + 
+                "<br> Email: " + document.getElementById("email").value + 
+                "<br> Message: " + document.getElementById("message").value,
+            }).then(
+              message => alert("Message Sent Successfully")
+            );
+        }
+    </script>
     <script src="./contact_me.js"></script>
+    <script src="./mongdb.js"></script>
 </body>
 </html>

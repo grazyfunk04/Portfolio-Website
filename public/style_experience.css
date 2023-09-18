@@ -213,6 +213,15 @@ nav ul li a:hover{
     margin: 10px 0;
 }
 
+.problem_statement{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.3rem;
+    margin: 2rem 0;
+}
+
 .UI_UX{
     display: flex;
     flex-direction: column;
@@ -223,6 +232,15 @@ nav ul li a:hover{
 }
 
 .nodejs{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.3rem;
+    margin: 2rem 0;
+}
+
+.GDSC{
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -437,7 +455,7 @@ footer{
         font-size: 2.2rem;
     }
 
-    .confluence, .MAD, .UI_UX, .nodejs{
+    .confluence, .MAD, .UI_UX, .nodejs,.GDSC,.problem_statement{
         font-size: 1.4rem;
     }
 
@@ -461,7 +479,7 @@ footer{
         font-size: 1.9rem;
     }
 
-    .confluence, .MAD, .UI_UX, .nodejs{
+    .confluence, .MAD, .UI_UX, .nodejs,.GDSC,.problem_statement{
         font-size: 1.1rem;
     }
 
@@ -504,7 +522,7 @@ footer{
         font-size: 1.6  rem;
     }
 
-    .confluence, .MAD, .UI_UX, .nodejs{
+    .confluence, .MAD, .UI_UX, .nodejs,.GDSC,.problem_statement{
         font-size: 0.8rem;
     }
     
