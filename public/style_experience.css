@@ -239,6 +239,22 @@ nav ul li a:hover{
     font-size: 1.3rem;
     margin: 2rem 0;
 }
+.supervised{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.3rem;
+    margin: 2rem 0;
+}
+.googlecloud{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.3rem;
+    margin: 2rem 0;
+}
 
 .GDSC{
     display: flex;
